@@ -6,18 +6,30 @@ h1 {
     color: #2E97BF;
 }
 
-.fa-twitch {
-    color: #6441a4;
+.fa-dropbox {
+    color: #f28d1a;
 }
 
 .fa-github {
     color: #ffffff;
 }
 
+.fa-twitch {
+    color: #6441a4;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
 .fa-youtube-play {
     color: #ff0000;
 }
 
-.fa-dropbox {
-    color: #f28d1a;
+.fa {
+  transition: all 0.3s ease;
+}
+
+.btn:hover .fa {
+    opacity: 0.5;
 }

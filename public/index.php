@@ -16,25 +16,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 text-center pt-3 pb-3">
-                    <a href="http://youtube.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link"><i class="fa fa-4x fa-youtube-play" aria-hidden="true"></i>
-</a>
-                </div>
-                <div class="col-6 text-center pt-3 pb-3">
-                    <a href="http://twitter.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link"><i class="fa fa-4x fa-twitter" aria-hidden="true"></i>
-</a>
-                </div>
-                <div class="col-6 text-center pt-3 pb-3">
-                    <a href="http://twitch.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link"><i class="fa fa-4x fa-twitch" aria-hidden="true"></i>
-</a>
-                </div>
-                <div class="col-6 text-center pt-3 pb-3">
-                    <a href="http://github.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link"><i class="fa fa-4x fa-github" aria-hidden="true"></i>
-</a>
-                </div>
-                <div class="col-6 text-center pt-3 pb-3">
-                    <a href="http://packagist.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link"><i class="fa fa-4x fa-dropbox" aria-hidden="true"></i>
-</a>
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 text-center pt-3 pb-3">
+                            <a href="http://youtube.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link">
+                                <i class="fa fa-4x fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center pt-3 pb-3">
+                            <a href="http://twitter.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link">
+                                <i class="fa fa-4x fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center pt-3 pb-3">
+                            <a href="http://twitch.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link">
+                                <i class="fa fa-4x fa-twitch" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center pt-3 pb-3">
+                            <a href="http://github.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link">
+                                <i class="fa fa-4x fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center pt-3 pb-3">
+                            <a href="http://packagist.insanitymeetshh.net" target="_blank" class="btn btn-lg btn-link">
+                                <i class="fa fa-4x fa-dropbox" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
