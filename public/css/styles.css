@@ -27,9 +27,9 @@ h1 {
 }
 
 .fa {
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.btn:hover .fa {
+a:hover .fa {
     opacity: 0.5;
 }
