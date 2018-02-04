@@ -49,6 +49,29 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center my-5">Software</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://slim3.insanitymeetshh.net/" target="_blank">
+                                <i class="fa fa-5x fa-code-fork" aria-hidden="true"></i>
+                                <div class="pt-2">Slim Framework 3 Skeleton</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://fa47.insanitymeetshh.net/" target="_blank">
+                                <i class="fa fa-5x fa-font-awesome" aria-hidden="true"></i>
+                                <div class="pt-2">FontAwesome 4.7 Docu</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
