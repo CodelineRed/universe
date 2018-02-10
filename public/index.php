@@ -51,7 +51,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center my-5">Software</h3>
+                    <h3 class="text-center mt-5 mb-2">Software</h3>
                 </div>
             </div>
             <div class="row">
@@ -66,7 +66,13 @@
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://fa47.insanitymeetshh.net/" target="_blank">
                                 <i class="fa fa-5x fa-font-awesome" aria-hidden="true"></i>
-                                <div class="pt-2">FontAwesome 4.7 Docu</div>
+                                <div class="pt-2">FontAwesome 4.7 CheatSheet</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://gulp.insanitymeetshh.net/" target="_blank">
+                                <i class="fa fa-5x fa-terminal" aria-hidden="true"></i>
+                                <div class="pt-2">Gulp Templating</div>
                             </a>
                         </div>
                     </div>
