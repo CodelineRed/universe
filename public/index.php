@@ -24,26 +24,37 @@
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://youtube.insanitymeetshh.net" target="_blank">
                                 <i class="fa fa-5x fa-youtube-play" aria-hidden="true"></i>
+                                <div class="pt-2">YouTube</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitter.insanitymeetshh.net" target="_blank">
                                 <i class="fa fa-5x fa-twitter" aria-hidden="true"></i>
+                                <div class="pt-2">Twitter</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitch.insanitymeetshh.net" target="_blank">
                                 <i class="fa fa-5x fa-twitch" aria-hidden="true"></i>
+                                <div class="pt-2">Twitch</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://github.insanitymeetshh.net" target="_blank">
                                 <i class="fa fa-5x fa-github" aria-hidden="true"></i>
+                                <div class="pt-2">GitHub</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://packagist.insanitymeetshh.net" target="_blank">
                                 <i class="fa fa-5x fa-dropbox" aria-hidden="true"></i>
+                                <div class="pt-2">Packagist</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://steam.insanitymeetshh.net" target="_blank">
+                                <i class="fa fa-5x fa-steam" aria-hidden="true"></i>
+                                <div class="pt-2">Steam</div>
                             </a>
                         </div>
                     </div>
@@ -60,7 +71,7 @@
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://slim3.insanitymeetshh.net/" target="_blank">
                                 <i class="fa fa-5x fa-code-fork" aria-hidden="true"></i>
-                                <div class="pt-2">Slim Framework 3 Skeleton</div>
+                                <div class="pt-2">Slim Framework 3 Skeleton (Fork)</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
