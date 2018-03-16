@@ -17,8 +17,6 @@
                 <div class="col-12">
                     <h1 class="text-center my-5">InsanityMeetsHH Universe</h1>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -64,8 +62,6 @@
                 <div class="col-12">
                     <h3 class="text-center mt-5 mb-2">Software</h3>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -84,6 +80,21 @@
                             <a href="http://gulp.insanitymeetshh.net/" target="_blank">
                                 <i class="fa fa-5x fa-terminal" aria-hidden="true"></i>
                                 <div class="pt-2">Gulp Templating</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center mt-5 mb-2">Miscellaneous</h3>
+                </div>
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="row">
+                        <div class="col-12 text-center py-4">
+                            <a href="http://stream.insanitymeetshh.net/" target="_blank">
+                                <i class="fa fa-5x fa-gamepad" aria-hidden="true"></i>
+                                <div class="pt-2">Stream Information</div>
                             </a>
                         </div>
                     </div>
