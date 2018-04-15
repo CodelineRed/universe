@@ -65,9 +65,9 @@
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://slim3.insanitymeetshh.net/" target="_blank">
-                                <i class="fa fa-5x fa-code-fork" aria-hidden="true"></i>
-                                <div class="pt-2">Slim Framework 3 Skeleton (Fork)</div>
+                            <a href="http://ca.insanitymeetshh.net/" target="_blank">
+                                <i class="fa fa-5x fa-css3" aria-hidden="true"></i>
+                                <div class="pt-2">Canvas Animation</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -80,6 +80,12 @@
                             <a href="http://gulp.insanitymeetshh.net/" target="_blank">
                                 <i class="fa fa-5x fa-terminal" aria-hidden="true"></i>
                                 <div class="pt-2">Gulp Templating</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://slim3.insanitymeetshh.net/" target="_blank">
+                                <i class="fa fa-5x fa-code-fork" aria-hidden="true"></i>
+                                <div class="pt-2">Slim Framework 3 Skeleton (Fork)</div>
                             </a>
                         </div>
                     </div>
