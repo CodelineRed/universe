@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>InsanityMeetsHH Universe</title>
-        <base href="http://www.insanitymeetshh.net/">
+        <!--<base href="http://www.insanitymeetshh.net/">-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="theme-color" content="#212121">
@@ -47,6 +47,12 @@
                             <a href="http://packagist.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-dropbox" aria-hidden="true"></i>
                                 <div class="pt-2">Packagist</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://npm.insanitymeetshh.net" target="_blank">
+                                <i class="fab fa-5x fa-npm" aria-hidden="true"></i>
+                                <div class="pt-2">NPM</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">

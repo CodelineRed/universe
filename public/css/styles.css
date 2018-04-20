@@ -30,6 +30,10 @@ a .fab.fa-youtube {
     color: #ff0000;
 }
 
+a .fab.fa-npm {
+    color: #CB3837;
+}
+
 a, .fab, .fas {
     transition: all 0.3s ease;
 }
