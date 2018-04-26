@@ -72,8 +72,8 @@
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://ca.insanitymeetshh.net/" target="_blank">
-                                <i class="fab fa-5x fa-css3" aria-hidden="true"></i>
-                                <div class="pt-2">Canvas Animation</div>
+                                <i class="fas fa-5x fa-paint-brush" aria-hidden="true"></i>
+                                <div class="pt-2">jQuery Plugin - Canvas Animation</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
