@@ -72,7 +72,7 @@
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://ca.insanitymeetshh.net/" target="_blank">
-                                <i class="fas fa-5x fa-paint-brush" aria-hidden="true"></i>
+                                <i class="fas fa-5x fa-puzzle-piece" aria-hidden="true"></i>
                                 <div class="pt-2">jQuery Plugin - Canvas Animation</div>
                             </a>
                         </div>
