@@ -2,11 +2,21 @@
 <html>
     <head>
         <title>InsanityMeetsHH Universe</title>
-        <!--<base href="http://www.insanitymeetshh.net/">-->
+        <base href="http://www.insanitymeetshh.net/">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="theme-color" content="#212121">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="img/favicons/favicon-180x180.png" sizes="180x180">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="img/favicons/manifest.json">
+        <link rel="mask-icon" href="img/favicons/favicon.svg" color="#212121">
+        <meta name="msapplication-TileColor" content="#212121">
+        <meta name="msapplication-TileImage" content="img/favicons/favicon-144x144.png">
+        <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#212121">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/styles.css">
