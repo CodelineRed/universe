@@ -81,15 +81,9 @@
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://ca.insanitymeetshh.net/" target="_blank">
-                                <i class="fas fa-5x fa-puzzle-piece" aria-hidden="true"></i>
-                                <div class="pt-2">jQuery Plugin - Canvas Animation</div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://fa47.insanitymeetshh.net/" target="_blank">
-                                <i class="fab fa-5x fa-font-awesome-alt" aria-hidden="true"></i>
-                                <div class="pt-2">FontAwesome 4.7 CheatSheet</div>
+                            <a href="http://slim3.insanitymeetshh.net/" target="_blank">
+                                <i class="fas fa-5x fa-code-branch" aria-hidden="true"></i>
+                                <div class="pt-2">Slim Framework 3 Skeleton (Fork)</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -99,9 +93,15 @@
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://slim3.insanitymeetshh.net/" target="_blank">
-                                <i class="fas fa-5x fa-code-branch" aria-hidden="true"></i>
-                                <div class="pt-2">Slim Framework 3 Skeleton (Fork)</div>
+                            <a href="http://ca.insanitymeetshh.net/" target="_blank">
+                                <i class="fas fa-5x fa-puzzle-piece" aria-hidden="true"></i>
+                                <div class="pt-2">jQuery Plugin - Canvas Animation</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://fa47.insanitymeetshh.net/" target="_blank">
+                                <i class="fab fa-5x fa-font-awesome-alt" aria-hidden="true"></i>
+                                <div class="pt-2">FontAwesome 4.7 CheatSheet</div>
                             </a>
                         </div>
                     </div>
