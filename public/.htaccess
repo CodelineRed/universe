@@ -1,7 +1,8 @@
-Rewritecond %{HTTP_HOST} ^insanitymeetshh\.net
+RewriteCond %{HTTP_HOST} ^insanitymeetshh\.net
 RewriteRule ^(.*)$ https://www.insanitymeetshh.net/$1 [R=301,L]
 
 RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} insanitymeetshh\.net
 RewriteRule ^(.*)$ https://www.insanitymeetshh.net/$1 [L,R=301]
 
 RewriteEngine on
