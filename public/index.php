@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>InsanityMeetsHH Universe</title>
-        <base href="https://www.insanitymeetshh.net/">
+        <base href="<?php echo $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']); ?>">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="theme-color" content="#212121">
@@ -88,7 +88,7 @@
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://gulp.insanitymeetshh.net/" target="_blank">
-                                <i class="fas fa-5x fa-terminal" aria-hidden="true"></i>
+                                <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
                                 <div class="pt-2">Gulp Templating</div>
                             </a>
                         </div>
@@ -96,6 +96,18 @@
                             <a href="http://ca.insanitymeetshh.net/" target="_blank">
                                 <i class="fas fa-5x fa-puzzle-piece" aria-hidden="true"></i>
                                 <div class="pt-2">jQuery Plugin - Canvas Animation</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" target="_blank">
+                                <i class="fas fa-5x fa-puzzle-piece" aria-hidden="true"></i>
+                                <div class="pt-2">JavaScript Plugin - Bootstrap Breakpoint</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="https://github.com/InsanityMeetsHH/file-sharing" target="_blank">
+                                <i class="fab fa-5x fa-php" aria-hidden="true"></i>
+                                <div class="pt-2">File Sharing</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
