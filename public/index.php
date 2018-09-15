@@ -134,7 +134,7 @@
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://devbook.insanitymeetshh.net/" target="_blank">
                                 <i class="fas fa-5x fa-book" aria-hidden="true"></i>
-                                <div class="pt-2">Developer Bookmnark</div>
+                                <div class="pt-2">Developer Bookmark</div>
                             </a>
                         </div>
                     </div>
