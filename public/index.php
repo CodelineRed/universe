@@ -81,13 +81,13 @@
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://slim3.insanitymeetshh.net/" target="_blank">
+                            <a href="https://slim3.insanitymeetshh.net/" target="_blank">
                                 <i class="fas fa-5x fa-code-branch" aria-hidden="true"></i>
-                                <div class="pt-2">Slim Framework 3 Skeleton (Fork)</div>
+                                <div class="pt-2">Slim 3 Skeleton (Fork)</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://gulp.insanitymeetshh.net/" target="_blank">
+                            <a href="https://gulp.insanitymeetshh.net/" target="_blank">
                                 <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
                                 <div class="pt-2">Gulp Templating</div>
                             </a>
@@ -111,7 +111,7 @@
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://fa47.insanitymeetshh.net/" target="_blank">
+                            <a href="https://fa47.insanitymeetshh.net/" target="_blank">
                                 <i class="fab fa-5x fa-font-awesome-alt" aria-hidden="true"></i>
                                 <div class="pt-2">FontAwesome 4.7 CheatSheet</div>
                             </a>
@@ -125,10 +125,16 @@
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
-                        <div class="col-12 text-center py-4">
-                            <a href="http://stream.insanitymeetshh.net/" target="_blank">
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="https://stream.insanitymeetshh.net/" target="_blank">
                                 <i class="fas fa-5x fa-gamepad" aria-hidden="true"></i>
                                 <div class="pt-2">Stream Information</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="https://devbook.insanitymeetshh.net/" target="_blank">
+                                <i class="fas fa-5x fa-book" aria-hidden="true"></i>
+                                <div class="pt-2">Developer Bookmnark</div>
                             </a>
                         </div>
                     </div>
