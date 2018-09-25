@@ -71,6 +71,12 @@
                                 <div class="pt-2">Steam</div>
                             </a>
                         </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="https://stackoverflow.com/users/10384360/insanitymeetshh" target="_blank">
+                                <i class="fab fa-5x fa-stack-overflow" aria-hidden="true"></i>
+                                <div class="pt-2">Stackoverflow</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
