@@ -10,38 +10,55 @@ a, h1, h2, h3, h4 {
     color: #2E97BF;
 }
 
+a .svg-inline--fa.fa-dropbox,
 a .fab.fa-dropbox {
     color: #f28d1a;
 }
 
+a .svg-inline--fa.fa-github,
 a .fab.fa-github {
     color: #ffffff;
 }
 
+a .svg-inline--fa.fa-twitch,
 a .fab.fa-twitch {
     color: #6441a4;
 }
 
+a .svg-inline--fa.fa-twitter,
 a .fab.fa-twitter {
     color: #1da1f2;
 }
 
+a .svg-inline--fa.fa-youtube,
 a .fab.fa-youtube {
     color: #ff0000;
 }
 
+a .svg-inline--fa.fa-npm,
 a .fab.fa-npm {
     color: #CB3837;
 }
 
-a, .fab, .fas {
+a .svg-inline--fa.fa-steam-symbol,
+a .fab.fa-steam-symbol {
+    color: #ffffff;
+}
+
+a .svg-inline--fa.fa-stack-overflow,
+a .fab.fa-stack-overflow {
+    color: #f48024;
+}
+
+a, .fab, .fas, .svg-inline--fa {
     transition: all 0.3s ease;
 }
 
-a .fab, a .fas {
+a .fab, a .fas, a .svg-inline--fa {
     color: #c9c9c9;
 }
 
+a:hover .svg-inline--fa,
 a:hover .fab,
 a:hover .fas {
     opacity: 0.5;
@@ -49,4 +66,8 @@ a:hover .fas {
 
 a:hover {
     text-decoration: none;
+}
+
+.fa-layers-text {
+    color: #212121;
 }

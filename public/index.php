@@ -18,8 +18,7 @@
         <meta name="theme-color" content="#212121">
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css?v=2018-10-21">
     </head>
     <body>
         <div class="container">
@@ -88,8 +87,11 @@
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://slim3.insanitymeetshh.net/" target="_blank">
-                                <i class="fas fa-5x fa-code-branch" aria-hidden="true"></i>
-                                <div class="pt-2">Slim 3 Skeleton (Fork)</div>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-code-branch"></i>
+                                    <i class="fab fa-php" data-fa-transform="shrink-8 down-5 right-2.5"></i>
+                                </span>
+                                <div class="pt-2">Slim Skeleton Fork</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -100,19 +102,28 @@
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://ca.insanitymeetshh.net/" target="_blank">
-                                <i class="fas fa-5x fa-puzzle-piece" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">jQuery</span>
+                                </span>
                                 <div class="pt-2">jQuery Plugin - Canvas Animation</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" target="_blank">
-                                <i class="fas fa-5x fa-puzzle-piece" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1.5" style="font-weight:900">JavaScript</span>
+                                </span>
                                 <div class="pt-2">JavaScript Plugin - Bootstrap Breakpoint</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://github.com/InsanityMeetsHH/file-sharing" target="_blank">
-                                <i class="fab fa-5x fa-php" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
+                                    <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
+                                </span>
                                 <div class="pt-2">File Sharing</div>
                             </a>
                         </div>
@@ -147,5 +158,6 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/fa-all.min.js?v=5.4.1"></script>
     </body>
 </html>
