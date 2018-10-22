@@ -1,24 +1,70 @@
+<?php
+// default setting (home page)        
+$meta = array(
+    'lang' => 'en',
+    'title' => 'InsanityMeetsHH Universe',
+    'baseUrl' => $baseUrl,
+    'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+    'keywords' => '',
+    'description' => '',
+    'robots' => 'index,follow',
+    'author' => 'InsanityMeetsHH',
+    'fbAppId' => '',
+    'fbAdmins' => '',
+    'publisher' => '',
+    'type' => 'website',
+    'socialMediaImage' => '',
+    'siteName' => 'InsanityMeetsHH Universe',
+    'twitterSite' => 'InsanityMeetsHH',
+    'twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
+    'rssUrl' => '',
+    'locale' => 'de_DE',
+    'themeColor' => '#212121',
+);
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="<?php echo $meta['lang']; ?>">
     <head>
-        <title>InsanityMeetsHH Universe</title>
-        <base href="<?php echo $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']); ?>">
         <meta charset="UTF-8">
+        <title><?php echo $meta['title']; ?></title>
+        <base href="<?php echo $meta['baseUrl']; ?>">
+        <meta name="keywords" content="<?php echo $meta['keywords']; ?>"/>
+        <meta name="description" content="<?php echo $meta['description']; ?>">
+        <meta name='robots' content="<?php echo $meta['robots']; ?>">
+        <meta name="author" content="<?php echo $meta['author']; ?>">
+        <meta property="fb:admins" content="<?php echo $meta['fbAdmins']; ?>"/>
+        <meta property="fb:app_id" content="<?php echo $meta['fbAppId']; ?>"/>
+        <meta property="og:type" content="<?php echo $meta['type']; ?>"/>
+        <meta property="og:title" content="<?php echo $meta['title']; ?>"/>
+        <meta property="og:description" content="<?php echo $meta['description']; ?>"/>
+        <meta property="og:image" content="<?php echo $meta['socialMediaImage']; ?>"/>
+        <meta property="og:site_name" content="<?php echo $meta['siteName']; ?>"/>
+        <meta property="og:url" content="<?php echo $meta['currentUrl']; ?>"/>
+        <meta property="og:locale" content="<?php echo $meta['locale']; ?>"/>
+        <meta property="article:publisher" content="<?php echo $meta['publisher']; ?>"/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="<?php echo $meta['twitterSite']; ?>">
+        <meta name="twitter:title" content="<?php echo $meta['title']; ?>">
+        <meta name="twitter:description" content="<?php echo $meta['description']; ?>">
+        <meta name="twitter:image" content="<?php echo $meta['socialMediaImage']; ?>">
+        <link rel="me" href="<?php echo $meta['twitterUrl']; ?>">
+        <link rel="canonical" href="<?php echo $meta['currentUrl']; ?>"/>
+        <link rel="alternate" hreflang="x-default" href="<?php echo $meta['currentUrl']; ?>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta name="theme-color" content="#212121">
         <link rel="apple-touch-icon" href="img/favicons/favicon-180x180.png" sizes="180x180">
         <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="img/favicons/favicon-192x192.png" sizes="192x192">
         <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="img/favicons/manifest.json">
-        <link rel="mask-icon" href="img/favicons/favicon.svg" color="#212121">
-        <meta name="msapplication-TileColor" content="#212121">
+        <link rel="mask-icon" href="img/favicons/favicon.svg" color="<?php echo $meta['themeColor']; ?>">
+        <meta name="msapplication-TileColor" content="<?php echo $meta['themeColor']; ?>">
         <meta name="msapplication-TileImage" content="img/favicons/favicon-144x144.png">
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#212121">
+        <meta name="theme-color" content="<?php echo $meta['themeColor']; ?>">
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css?v=2018-10-21">
+        <link rel="stylesheet" href="css/styles.css?v=2018-10-22">
     </head>
     <body>
         <div class="container">
@@ -158,6 +204,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="js/fa-all.min.js?v=5.4.1"></script>
+        <script src="js/fa-all.min.js?v=5.4.1"></script>
     </body>
 </html>

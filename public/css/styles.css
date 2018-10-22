@@ -50,7 +50,7 @@ a .fab.fa-stack-overflow {
     color: #f48024;
 }
 
-a, .fab, .fas, .svg-inline--fa {
+a {
     transition: all 0.3s ease;
 }
 
@@ -58,13 +58,8 @@ a .fab, a .fas, a .svg-inline--fa {
     color: #c9c9c9;
 }
 
-a:hover .svg-inline--fa,
-a:hover .fab,
-a:hover .fas {
-    opacity: 0.5;
-}
-
 a:hover {
+    opacity: 0.5;
     text-decoration: none;
 }
 
