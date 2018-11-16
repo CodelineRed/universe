@@ -65,6 +65,24 @@ $meta = array(
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css?v=2018-10-22">
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "InsanityMeetsHH",
+            "url": "https://insanitymeetshh.net",
+            "sameAs": [
+                "https://www.youtube.com/channel/UCQhN04sk-qPWMo9cn6g_DRw",
+                "https://twitter.com/InsanityMeetsHH",
+                "https://www.twitch.tv/insanitymeetshh",
+                "https://github.com/InsanityMeetsHH",
+                "https://packagist.org/users/InsanityMeetsHH/",
+                "https://www.npmjs.com/~insanitymeetshh",
+                "https://steamcommunity.com/id/insanity_meets_hamburg",
+                "https://stackoverflow.com/users/10384360/insanitymeetshh"
+            ]
+        }
+        </script>
     </head>
     <body>
         <div class="container">
@@ -131,53 +149,99 @@ $meta = array(
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://slim3.insanitymeetshh.net/" target="_blank">
+                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/slim-skeleton" />
+                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/Slim-Skeleton" />
+                            <meta itemprop="description" content="Slim Skeleton with Twig, Doctrine, Google reCAPTCHA, Two Factor Auth and Localisation.">
+                            <a href="https://slim3.insanitymeetshh.net" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-code-branch"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-8 down-5 right-2.5"></i>
                                 </span>
-                                <div class="pt-2">Slim Skeleton Fork</div>
+                                <span itemprop="name" class="pt-2 d-block">Slim Skeleton Fork</span>
                             </a>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://gulp.insanitymeetshh.net/" target="_blank">
+                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/gulp-templating" />
+                            <meta itemprop="description" content="Skeleton to create templates with gulp.">
+                            <a href="https://gulp.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
-                                <div class="pt-2">Gulp Templating</div>
+                                <span itemprop="name" class="pt-2 d-block">Gulp Templating</span>
                             </a>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://ca.insanitymeetshh.net/" target="_blank">
+                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
+                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/jquery-canvas-animation" />
+                            <meta itemprop="description" content="A jQuery Plugin to create JavaScript step in mix with CSS3 animation / transition.">
+                            <a href="http://ca.insanitymeetshh.net" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">jQuery</span>
                                 </span>
-                                <div class="pt-2">jQuery Plugin - Canvas Animation</div>
+                                <span itemprop="name" class="pt-2 d-block">jQuery Plugin - Canvas Animation</span>
                             </a>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" target="_blank">
+                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
+                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" />
+                            <meta itemprop="description" content="Write JavaScript conditions depending on the Bootstrap breakpoint.">
+                            <a href="https://www.npmjs.com/package/bootstrap-breakpoint" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1.5" style="font-weight:900">JavaScript</span>
                                 </span>
-                                <div class="pt-2">JavaScript Plugin - Bootstrap Breakpoint</div>
+                                <span itemprop="name" class="pt-2 d-block">JavaScript Plugin - Bootstrap Breakpoint</span>
                             </a>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://github.com/InsanityMeetsHH/file-sharing" target="_blank">
+                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/file-sharing" />
+                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/file-sharing" />
+                            <meta itemprop="description" content="Platform to upload, download and share files.">
+                            <a href="https://packagist.org/packages/insanitymeetshh/file-sharing" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
                                 </span>
-                                <div class="pt-2">File Sharing</div>
+                                <span itemprop="name" class="pt-2 d-block">File Sharing</span>
                             </a>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://fa47.insanitymeetshh.net/" target="_blank">
+                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/fontawesome-47" />
+                            <meta itemprop="description" content="Font Awesome 4 legacy project.">
+                            <a href="https://fa47.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-font-awesome-alt" aria-hidden="true"></i>
-                                <div class="pt-2">FontAwesome 4.7 CheatSheet</div>
+                                <span itemprop="name" class="pt-2 d-block">FontAwesome 4.7 CheatSheet</span>
                             </a>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
                         </div>
                     </div>
                 </div>
