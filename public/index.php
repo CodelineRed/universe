@@ -68,19 +68,25 @@ $meta = array(
         <script type="application/ld+json">
         {
             "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "InsanityMeetsHH",
+            "@type": "WebSite",
+            "name": "InsanityMeetsHH Universe",
             "url": "https://insanitymeetshh.net",
-            "sameAs": [
-                "https://www.youtube.com/channel/UCQhN04sk-qPWMo9cn6g_DRw",
-                "https://twitter.com/InsanityMeetsHH",
-                "https://www.twitch.tv/insanitymeetshh",
-                "https://github.com/InsanityMeetsHH",
-                "https://packagist.org/users/InsanityMeetsHH/",
-                "https://www.npmjs.com/~insanitymeetshh",
-                "https://steamcommunity.com/id/insanity_meets_hamburg",
-                "https://stackoverflow.com/users/10384360/insanitymeetshh"
-            ]
+            "copyrightYear": 2018,
+            "creator": {
+                "@type": "Organization",
+                "name": "InsanityMeetsHH",
+                "url": "https://insanitymeetshh.net",
+                "sameAs": [
+                    "https://www.youtube.com/channel/UCQhN04sk-qPWMo9cn6g_DRw",
+                    "https://twitter.com/InsanityMeetsHH",
+                    "https://www.twitch.tv/insanitymeetshh",
+                    "https://github.com/InsanityMeetsHH",
+                    "https://packagist.org/users/InsanityMeetsHH/",
+                    "https://www.npmjs.com/~insanitymeetshh",
+                    "https://steamcommunity.com/id/insanity_meets_hamburg",
+                    "https://stackoverflow.com/users/10384360/insanitymeetshh"
+                ]
+            }
         }
         </script>
     </head>
@@ -149,10 +155,20 @@ $meta = array(
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
-                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/slim-skeleton" />
-                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/Slim-Skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/Slim-Skeleton" />
+                            <meta itemprop="programmingLanguage" content="PHP" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="Slim Skeleton with Twig, Doctrine, Google reCAPTCHA, Two Factor Auth and Localisation.">
+                            <meta itemprop="copyrightYear" content="2018" />
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
                             <a href="https://slim3.insanitymeetshh.net" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-code-branch"></i>
@@ -160,29 +176,37 @@ $meta = array(
                                 </span>
                                 <span itemprop="name" class="pt-2 d-block">Slim Skeleton Fork</span>
                             </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/gulp-templating" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/gulp-templating" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="Skeleton to create templates with gulp." />
+                            <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0">
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
-                        </div>
-                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/gulp-templating" />
-                            <meta itemprop="description" content="Skeleton to create templates with gulp.">
                             <a href="https://gulp.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
                                 <span itemprop="name" class="pt-2 d-block">Gulp Templating</span>
                             </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/jquery-canvas-animation" />
+                            <meta itemprop="programmingLanguage" content="jQuery" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="A jQuery Plugin to create JavaScript step in mix with CSS3 animation / transition." />
+                            <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0">
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
-                        </div>
-                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
-                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/jquery-canvas-animation" />
-                            <meta itemprop="description" content="A jQuery Plugin to create JavaScript step in mix with CSS3 animation / transition.">
                             <a href="http://ca.insanitymeetshh.net" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
@@ -190,16 +214,19 @@ $meta = array(
                                 </span>
                                 <span itemprop="name" class="pt-2 d-block">jQuery Plugin - Canvas Animation</span>
                             </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://www.npmjs.com/package/bootstrap-breakpoint" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" />
+                            <meta itemprop="programmingLanguage" content="jQuery" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="Write JavaScript conditions depending on the Bootstrap breakpoint." />
+                            <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
-                                <meta itemprop="price" content="0">
-                                <meta itemprop="priceCurrency" content="EUR">
+                                <meta itemprop="price" content="0" />
+                                <meta itemprop="priceCurrency" content="EUR" />
                             </div>
-                        </div>
-                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
-                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" />
-                            <meta itemprop="description" content="Write JavaScript conditions depending on the Bootstrap breakpoint.">
                             <a href="https://www.npmjs.com/package/bootstrap-breakpoint" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
@@ -207,16 +234,21 @@ $meta = array(
                                 </span>
                                 <span itemprop="name" class="pt-2 d-block">JavaScript Plugin - Bootstrap Breakpoint</span>
                             </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/file-sharing" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/file-sharing" />
+                            <meta itemprop="programmingLanguage" content="PHP" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="Platform to upload, download and share files.">
+                            <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
-                                <meta itemprop="price" content="0">
-                                <meta itemprop="priceCurrency" content="EUR">
+                                <meta itemprop="price" content="0" />
+                                <meta itemprop="priceCurrency" content="EUR" />
                             </div>
-                        </div>
-                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/file-sharing" />
-                            <link itemprop="sameAs" href="https://github.com/InsanityMeetsHH/file-sharing" />
-                            <meta itemprop="description" content="Platform to upload, download and share files.">
                             <a href="https://packagist.org/packages/insanitymeetshh/file-sharing" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
@@ -224,24 +256,48 @@ $meta = array(
                                 </span>
                                 <span itemprop="name" class="pt-2 d-block">File Sharing</span>
                             </a>
-                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                <link itemprop="availability" href="http://schema.org/InStock" />
-                                <meta itemprop="price" content="0">
-                                <meta itemprop="priceCurrency" content="EUR">
-                            </div>
                         </div>
-                        <div itemscope itemtype="http://schema.org/Product" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/fontawesome-47" />
-                            <meta itemprop="description" content="Font Awesome 4 legacy project.">
-                            <a href="https://fa47.insanitymeetshh.net" target="_blank">
-                                <i class="fab fa-5x fa-font-awesome-alt" aria-hidden="true"></i>
-                                <span itemprop="name" class="pt-2 d-block">FontAwesome 4.7 CheatSheet</span>
-                            </a>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/typo3-skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/typo3-skeleton" />
+                            <meta itemprop="programmingLanguage" content="PHP" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="TYPO3 8.7 LTS Skeleton - InsanityMeetsHH" />
+                            <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
-                                <meta itemprop="price" content="0">
-                                <meta itemprop="priceCurrency" content="EUR">
+                                <meta itemprop="price" content="0" />
+                                <meta itemprop="priceCurrency" content="EUR" />
                             </div>
+                            <a href="https://github.com/InsanityMeetsHH/typo3-skeleton" target="_blank">
+                                <i class="fab fa-5x fa-typo3" aria-hidden="true"></i>
+                                <span itemprop="name" class="pt-2 d-block">TYPO3 8.7 Skeleton</span>
+                            </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/imhh-t3base" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/typo3-base-ext" />
+                            <meta itemprop="programmingLanguage" content="PHP" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="programmingLanguage" content="TypoScript" />
+                            <meta itemprop="description" content="TYPO3 Base Extension - InsanityMeetsHH" />
+                            <meta itemprop="copyrightYear" content="2018" />
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0" />
+                                <meta itemprop="priceCurrency" content="EUR" />
+                            </div>
+                            <a href="https://github.com/InsanityMeetsHH/typo3-base-ext" target="_blank">
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">TYPO3</span>
+                                </span>
+                                <span itemprop="name" class="pt-2 d-block">TYPO3 Base Extension</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -268,6 +324,6 @@ $meta = array(
                 </div>
             </div>
         </div>
-        <script src="js/fa-all.min.js?v=5.4.1"></script>
+        <script src="js/fa-all.min.js?v=5.5.0"></script>
     </body>
 </html>
