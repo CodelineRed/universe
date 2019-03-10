@@ -1,5 +1,11 @@
 <?php
-// default setting (home page)        
+$baseUrl = ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']);
+
+if (isset($_ENV['docker']) && $_ENV['docker']) {
+    $baseUrl = 'http://localhost:8080/';
+}
+
+// default setting (home page)
 $meta = array(
     'lang' => 'en',
     'title' => 'InsanityMeetsHH Universe',
@@ -63,7 +69,7 @@ $meta = array(
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <meta name="theme-color" content="<?php echo $meta['themeColor']; ?>">
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css?v=4.3.1">
         <link rel="stylesheet" href="css/styles.css?v=2018-10-22">
         <script type="application/ld+json">
         {
@@ -174,7 +180,7 @@ $meta = array(
                                     <i class="fas fa-code-branch"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-8 down-5 right-2.5"></i>
                                 </span>
-                                <span itemprop="name" class="pt-2 d-block">Slim Skeleton Fork</span>
+                                <span itemprop="name" class="pt-2 d-block">Slim Skeleton</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -192,7 +198,7 @@ $meta = array(
                             </div>
                             <a href="https://gulp.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
-                                <span itemprop="name" class="pt-2 d-block">Gulp Templating</span>
+                                <span itemprop="name" class="pt-2 d-block">Gulp Skeleton</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -264,7 +270,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="TYPO3 8.7 LTS Skeleton - InsanityMeetsHH" />
+                            <meta itemprop="description" content="TYPO3 8.7 Skeleton - InsanityMeetsHH" />
                             <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
@@ -273,7 +279,7 @@ $meta = array(
                             </div>
                             <a href="https://github.com/InsanityMeetsHH/typo3-skeleton" target="_blank">
                                 <i class="fab fa-5x fa-typo3" aria-hidden="true"></i>
-                                <span itemprop="name" class="pt-2 d-block">TYPO3 8.7 Skeleton</span>
+                                <span itemprop="name" class="pt-2 d-block">TYPO3 8.7 Skeleton (DEV)</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -296,7 +302,7 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">TYPO3</span>
                                 </span>
-                                <span itemprop="name" class="pt-2 d-block">TYPO3 Base Extension</span>
+                                <span itemprop="name" class="pt-2 d-block">TYPO3 Base Extension (DEV)</span>
                             </a>
                         </div>
                     </div>
@@ -324,6 +330,6 @@ $meta = array(
                 </div>
             </div>
         </div>
-        <script src="js/fa-all.min.js?v=5.5.0"></script>
+        <script src="js/fa-all.min.js?v=5.7.2"></script>
     </body>
 </html>
