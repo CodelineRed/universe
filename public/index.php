@@ -19,7 +19,7 @@ $meta = array(
     'fbAdmins' => '',
     'publisher' => '',
     'type' => 'website',
-    'socialMediaImage' => '',
+    'socialMediaImage' => $baseUrl . 'img/general-ci.jpg',
     'siteName' => 'InsanityMeetsHH Universe',
     'twitterSite' => 'InsanityMeetsHH',
     'twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
@@ -105,15 +105,15 @@ $meta = array(
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://instagram.insanitymeetshh.net" target="_blank">
-                                <i class="fab fa-5x fa-instagram" aria-hidden="true"></i>
-                                <div class="pt-2">Instagram</div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitter.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-twitter" aria-hidden="true"></i>
                                 <div class="pt-2">Twitter</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://instagram.insanitymeetshh.net" target="_blank">
+                                <i class="fab fa-5x fa-instagram" aria-hidden="true"></i>
+                                <div class="pt-2">Instagram</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
