@@ -71,6 +71,7 @@ $meta = array(
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         <link rel="stylesheet" href="css/bootstrap.min.css?v=4.3.1">
         <link rel="stylesheet" href="css/styles.css?v=2019-10-05">
+        <link rel="stylesheet" href="css/glitch.css?v=2019-11-03">
         <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -96,66 +97,74 @@ $meta = array(
         }
         </script>
     </head>
-    <body>
+    <body id="the-body" class="glitch">
         <div class="container">
             <div class="row">
+                <div class="col-12 mt-2 text-right">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="glitch-style" checked onchange="javascript:document.getElementById('the-body').classList.toggle('glitch');">
+                        <label class="custom-control-label" for="glitch-style">Glitch Style</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center my-5">InsanityMeetsHH Universe</h1>
+                    <h1 class="text-center mb-5 glitch-text" data-text="InsanityMeetsHH Universe">InsanityMeetsHH Universe</h1>
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitter.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-twitter" aria-hidden="true"></i>
-                                <div class="pt-2">Twitter</div>
+                                <div class="mt-2 glitch-text" data-text="Twitter">Twitter</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://instagram.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-instagram" aria-hidden="true"></i>
-                                <div class="pt-2">Instagram</div>
+                                <div class="mt-2 glitch-text" data-text="Instagram">Instagram</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitch.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-twitch" aria-hidden="true"></i>
-                                <div class="pt-2">Twitch</div>
+                                <div class="mt-2 glitch-text" data-text="Twitch">Twitch</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://youtube.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-youtube" aria-hidden="true"></i>
-                                <div class="pt-2">YouTube</div>
+                                <div class="mt-2 glitch-text" data-text="YouTube">YouTube</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://github.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-github" aria-hidden="true"></i>
-                                <div class="pt-2">GitHub</div>
+                                <div class="mt-2 glitch-text" data-text="GitHub">GitHub</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://packagist.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-dropbox" aria-hidden="true"></i>
-                                <div class="pt-2">Packagist</div>
+                                <div class="mt-2 glitch-text" data-text="Packagist">Packagist</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://npm.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-npm" aria-hidden="true"></i>
-                                <div class="pt-2">NPM</div>
+                                <div class="mt-2 glitch-text" data-text="NPM">NPM</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://steam.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-steam-symbol" aria-hidden="true"></i>
-                                <div class="pt-2">Steam</div>
+                                <div class="mt-2 glitch-text" data-text="Steam">Steam</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://stackoverflow.com/users/10384360/insanitymeetshh" target="_blank">
                                 <i class="fab fa-5x fa-stack-overflow" aria-hidden="true"></i>
-                                <div class="pt-2">Stackoverflow</div>
+                                <div class="mt-2 glitch-text" data-text="Stackoverflow">Stackoverflow</div>
                             </a>
                         </div>
                     </div>
@@ -163,7 +172,7 @@ $meta = array(
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center mt-5 mb-2">Software</h3>
+                    <h3 class="text-center mt-5 mb-2 glitch-text" data-text="Software">Software</h3>
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
@@ -186,7 +195,7 @@ $meta = array(
                                     <i class="fas fa-code-branch"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-8 down-5 right-2.5"></i>
                                 </span>
-                                <span itemprop="name" class="pt-2 d-block">Slim Skeleton</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Slim Skeleton">Slim Skeleton</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -204,7 +213,7 @@ $meta = array(
                             </div>
                             <a href="https://gulp.insanitymeetshh.net" target="_blank">
                                 <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
-                                <span itemprop="name" class="pt-2 d-block">Gulp Skeleton</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Gulp Skeleton">Gulp Skeleton</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -224,7 +233,7 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">jQuery</span>
                                 </span>
-                                <span itemprop="name" class="pt-2 d-block">jQuery Plugin - Canvas Animation</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="jQuery Plugin - Canvas Animation">jQuery Plugin - Canvas Animation</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -244,7 +253,7 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1.5" style="font-weight:900">JavaScript</span>
                                 </span>
-                                <span itemprop="name" class="pt-2 d-block">JavaScript Plugin - Bootstrap Breakpoint</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JavaScript Plugin - Bootstrap Breakpoint">JavaScript Plugin - Bootstrap Breakpoint</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -266,7 +275,7 @@ $meta = array(
                                     <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
                                 </span>
-                                <span itemprop="name" class="pt-2 d-block">File Sharing</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -285,7 +294,7 @@ $meta = array(
                             </div>
                             <a href="https://github.com/InsanityMeetsHH/typo3-skeleton" target="_blank">
                                 <i class="fab fa-5x fa-typo3" aria-hidden="true"></i>
-                                <span itemprop="name" class="pt-2 d-block">TYPO3 8.7 Skeleton (DEV)</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 8.7 Skeleton (DEV)">TYPO3 8.7 Skeleton (DEV)</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -308,7 +317,7 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">TYPO3</span>
                                 </span>
-                                <span itemprop="name" class="pt-2 d-block">TYPO3 Base Extension (DEV)</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 Base Extension (DEV)">TYPO3 Base Extension (DEV)</span>
                             </a>
                         </div>
                     </div>
@@ -316,20 +325,20 @@ $meta = array(
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center mt-5 mb-2">Miscellaneous</h3>
+                    <h3 class="text-center mt-5 mb-2 glitch-text" data-text="Miscellaneous">Miscellaneous</h3>
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://stream.insanitymeetshh.net/" target="_blank">
                                 <i class="fas fa-5x fa-gamepad" aria-hidden="true"></i>
-                                <div class="pt-2">Stream Information</div>
+                                <div class="mt-2 glitch-text" data-text="Stream Information">Stream Information</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://devbook.insanitymeetshh.net/" target="_blank">
                                 <i class="fas fa-5x fa-book" aria-hidden="true"></i>
-                                <div class="pt-2">Developer Bookmark</div>
+                                <div class="mt-2 glitch-text" data-text="Developer Bookmark">Developer Bookmark</div>
                             </a>
                         </div>
                     </div>
