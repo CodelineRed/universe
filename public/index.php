@@ -338,6 +338,12 @@ $meta = array(
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 Base Extension (DEV)">TYPO3 Base Extension (DEV)</span>
                             </a>
                         </div>
+                        <div class="col-6 col-sm-4 text-center py-4">
+                            <a href="http://gist.insanitymeetshh.net" target="_blank">
+                                <i class="fab fa-5x fa-github" aria-hidden="true"></i>
+                                <div class="mt-2 glitch-text" data-text="GitHub Gist">Code Snippets</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
