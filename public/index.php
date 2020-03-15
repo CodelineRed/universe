@@ -199,8 +199,8 @@ $meta = array(
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/gulp-templating" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/gulp-templating" />
+                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/gulp-skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/gulp-skeleton" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
