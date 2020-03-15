@@ -183,7 +183,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="Slim Skeleton with Twig, Doctrine, Google reCAPTCHA, Two Factor Auth and Localisation.">
+                            <meta itemprop="description" content="Slim Skeleton with Twig, Doctrine, Google reCAPTCHA, Two Factor Auth and Localisation">
                             <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
@@ -204,7 +204,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="Skeleton to create templates with gulp." />
+                            <meta itemprop="description" content="Skeleton to create templates with gulp" />
                             <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
@@ -217,11 +217,51 @@ $meta = array(
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/vue-skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/vue-skeleton" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="Vue.js Skeleton with Gulp" />
+                            <meta itemprop="copyrightYear" content="2020" />
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
+                            <a href="https://vue.insanitymeetshh.net" target="_blank">
+                                <i class="fab fa-5x fa-vuejs" aria-hidden="true"></i>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Vue Skeleton">Vue Skeleton</span>
+                            </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/file-sharing" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/file-sharing" />
+                            <meta itemprop="programmingLanguage" content="PHP" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="Platform to upload, download and share files">
+                            <meta itemprop="copyrightYear" content="2018" />
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0" />
+                                <meta itemprop="priceCurrency" content="EUR" />
+                            </div>
+                            <a href="https://packagist.org/packages/insanitymeetshh/file-sharing" target="_blank">
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
+                                    <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
+                                </span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing</span>
+                            </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
                             <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/jquery-canvas-animation" />
                             <meta itemprop="programmingLanguage" content="jQuery" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="A jQuery Plugin to create JavaScript step in mix with CSS3 animation / transition." />
+                            <meta itemprop="description" content="A jQuery Plugin to create JavaScript step in mix with CSS3 animation / transition" />
                             <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
@@ -241,7 +281,7 @@ $meta = array(
                             <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" />
                             <meta itemprop="programmingLanguage" content="jQuery" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="Write JavaScript conditions depending on the Bootstrap breakpoint." />
+                            <meta itemprop="description" content="Write JavaScript conditions depending on the Bootstrap breakpoint" />
                             <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
@@ -254,28 +294,6 @@ $meta = array(
                                     <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1.5" style="font-weight:900">JavaScript</span>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JavaScript Plugin - Bootstrap Breakpoint">JavaScript Plugin - Bootstrap Breakpoint</span>
-                            </a>
-                        </div>
-                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/file-sharing" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/file-sharing" />
-                            <meta itemprop="programmingLanguage" content="PHP" />
-                            <meta itemprop="programmingLanguage" content="HTML" />
-                            <meta itemprop="programmingLanguage" content="CSS" />
-                            <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="Platform to upload, download and share files.">
-                            <meta itemprop="copyrightYear" content="2018" />
-                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                <link itemprop="availability" href="http://schema.org/InStock" />
-                                <meta itemprop="price" content="0" />
-                                <meta itemprop="priceCurrency" content="EUR" />
-                            </div>
-                            <a href="https://packagist.org/packages/insanitymeetshh/file-sharing" target="_blank">
-                                <span class="fa-layers fa-5x">
-                                    <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
-                                    <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
-                                </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
