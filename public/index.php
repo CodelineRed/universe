@@ -97,12 +97,12 @@ $meta = array(
         }
         </script>
     </head>
-    <body id="the-body" class="glitch">
+    <body id="the-body" class="">
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-2 text-right">
                     <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="glitch-style" checked onchange="javascript:document.getElementById('the-body').classList.toggle('glitch');">
+                        <input type="checkbox" class="custom-control-input" id="glitch-style" onchange="javascript:document.getElementById('the-body').classList.toggle('glitch');">
                         <label class="custom-control-label" for="glitch-style">Glitch Style</label>
                     </div>
                 </div>
@@ -254,6 +254,28 @@ $meta = array(
                                     <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing</span>
+                            </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/twitch-chatbot" />
+                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/twitch-chatbot" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="programmingLanguage" content="NodeJs" />
+                            <meta itemprop="description" content="Twitch Chatbot made with Vue Skeleton">
+                            <meta itemprop="copyrightYear" content="2020" />
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0" />
+                                <meta itemprop="priceCurrency" content="EUR" />
+                            </div>
+                            <a href="https://github.com/InsanityMeetsHH/twitch-chatbot" target="_blank">
+                                <span class="fa-layers fa-5x">
+                                    <i class="fab fa-twitch" style="color:#c9c9c9;"></i>
+                                    <i class="fas fa-robot" data-fa-transform="shrink-12 down-5.5 right-4.5"></i>
+                                </span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">Twitch Chatbot</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
