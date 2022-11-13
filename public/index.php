@@ -1,5 +1,5 @@
 <?php
-$baseUrl = ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']);
+$baseUrl = ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://www.' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']);
 
 if (isset($_ENV['docker']) && $_ENV['docker']) {
     $baseUrl = 'http://localhost:8080/';
@@ -71,7 +71,7 @@ $meta = array(
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         <link rel="stylesheet" href="css/bootstrap.min.css?v=4.3.1">
         <link rel="stylesheet" href="css/styles.css?v=2019-10-05">
-        <link rel="stylesheet" href="css/glitch.css?v=2019-11-03">
+        <link rel="stylesheet" href="css/glitch.css?v=2022-11-13">
         <script type="application/ld+json">
         {
             "@context": "http://schema.org",
