@@ -2,7 +2,7 @@
 $baseUrl = ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://www.' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']);
 
 if (isset($_ENV['docker']) && $_ENV['docker']) {
-    $baseUrl = 'http://localhost:8080/';
+    $baseUrl = 'http://localhost:7700/';
 }
 
 // default setting (home page)
@@ -10,7 +10,7 @@ $meta = array(
     'lang' => 'en',
     'title' => 'InsanityMeetsHH Universe',
     'baseUrl' => $baseUrl,
-    'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+    'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://www.' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
     'keywords' => '',
     'description' => '',
     'robots' => 'index,follow',
