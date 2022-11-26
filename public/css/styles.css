@@ -6,8 +6,8 @@ body {
     background-color: #212121;
 }
 
-a, h1, h2, h3, h4 {
-    color: #2E97BF;
+a, h1, h2, h3, h4, label {
+    color: #FF2525;
 }
 
 a .svg-inline--fa.fa-dropbox,
@@ -64,14 +64,11 @@ a .fab, a .fas, a .svg-inline--fa {
 }
 
 a:hover {
-    opacity: 0.5;
+    color: #fff;
+    opacity: 0.75;
     text-decoration: none;
 }
 
 .fa-layers-text {
     color: #212121;
-}
-
-label {
-    color: #2E97BF;
 }

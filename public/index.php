@@ -8,21 +8,21 @@ if (isset($_ENV['docker']) && $_ENV['docker']) {
 // default setting (home page)
 $meta = array(
     'lang' => 'en',
-    'title' => 'InsanityMeetsHH Universe',
+    'title' => 'CodelineRed Universe',
     'baseUrl' => $baseUrl,
     'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://www.' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
     'keywords' => '',
     'description' => '',
     'robots' => 'index,follow',
-    'author' => 'InsanityMeetsHH',
+    'author' => 'CodelineRed',
     'fbAppId' => '',
     'fbAdmins' => '',
     'publisher' => '',
     'type' => 'website',
     'socialMediaImage' => $baseUrl . 'img/general-ci.jpg',
-    'siteName' => 'InsanityMeetsHH Universe',
-    'twitterSite' => 'InsanityMeetsHH',
-    'twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
+    'siteName' => 'CodelineRed Universe',
+    'twitterSite' => 'CodelineRed',
+    'twitterUrl' => 'https://twitter.com/CodelineRed',
     'rssUrl' => '',
     'locale' => 'en_US',
     'themeColor' => '#212121',
@@ -76,22 +76,22 @@ $meta = array(
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
-            "name": "InsanityMeetsHH Universe",
-            "url": "https://insanitymeetshh.net",
+            "name": "CodelineRed Universe",
+            "url": "https://www.codelinered.net",
             "copyrightYear": 2018,
             "creator": {
                 "@type": "Organization",
-                "name": "InsanityMeetsHH",
-                "url": "https://insanitymeetshh.net",
+                "name": "CodelineRed",
+                "url": "https://www.codelinered.net",
                 "sameAs": [
                     "https://www.youtube.com/channel/UCQhN04sk-qPWMo9cn6g_DRw",
-                    "https://twitter.com/InsanityMeetsHH",
-                    "https://www.twitch.tv/insanitymeetshh",
-                    "https://github.com/InsanityMeetsHH",
-                    "https://packagist.org/users/InsanityMeetsHH/",
-                    "https://www.npmjs.com/~insanitymeetshh",
+                    "https://twitter.com/CodelineRed",
+                    "https://www.twitch.tv/codelinered",
+                    "https://github.com/CodelineRed",
+                    "https://packagist.org/users/CodelineRed/",
+                    "https://www.npmjs.com/~codelinered",
                     "https://steamcommunity.com/id/insanity_meets_hamburg",
-                    "https://stackoverflow.com/users/10384360/insanitymeetshh"
+                    "https://stackoverflow.com/users/10384360/codelinered"
                 ]
             }
         }
@@ -109,60 +109,60 @@ $meta = array(
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center mb-5 glitch-text" data-text="InsanityMeetsHH Universe">InsanityMeetsHH Universe</h1>
+                    <h1 class="text-center mb-5 glitch-text" data-text="CodelineRed Universe">CodelineRed Universe</h1>
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://twitter.insanitymeetshh.net" target="_blank">
+                            <a href="http://twitter.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-twitter" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Twitter">Twitter</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://instagram.insanitymeetshh.net" target="_blank">
+                            <a href="http://instagram.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-instagram" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Instagram">Instagram</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://twitch.insanitymeetshh.net" target="_blank">
+                            <a href="http://twitch.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-twitch" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Twitch">Twitch</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://youtube.insanitymeetshh.net" target="_blank">
+                            <a href="http://youtube.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-youtube" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="YouTube">YouTube</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://github.insanitymeetshh.net" target="_blank">
+                            <a href="http://github.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-github" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="GitHub">GitHub</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://packagist.insanitymeetshh.net" target="_blank">
+                            <a href="http://packagist.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-dropbox" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Packagist">Packagist</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://npm.insanitymeetshh.net" target="_blank">
+                            <a href="http://npm.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-npm" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="NPM">NPM</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://steam.insanitymeetshh.net" target="_blank">
+                            <a href="http://steam.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-steam-symbol" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Steam">Steam</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://stackoverflow.com/users/10384360/insanitymeetshh" target="_blank">
+                            <a href="https://stackoverflow.com/users/10384360/codelinered" target="_blank">
                                 <i class="fab fa-5x fa-stack-overflow" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Stackoverflow">Stackoverflow</div>
                             </a>
@@ -178,7 +178,7 @@ $meta = array(
                     <div class="row">
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/slim-skeleton" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/Slim-Skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/Slim-Skeleton" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
@@ -199,8 +199,8 @@ $meta = array(
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/gulp-skeleton" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/gulp-skeleton" />
+                            <link itemprop="url" href="https://github.com/CodelineRed/gulp-skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/gulp-skeleton" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
@@ -211,14 +211,14 @@ $meta = array(
                                 <meta itemprop="price" content="0">
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
-                            <a href="https://gulp.insanitymeetshh.net" target="_blank">
+                            <a href="https://gulp.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Gulp Skeleton">Gulp Skeleton</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/vue-skeleton" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/vue-skeleton" />
+                            <link itemprop="url" href="https://github.com/CodelineRed/vue-skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/vue-skeleton" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
@@ -229,14 +229,14 @@ $meta = array(
                                 <meta itemprop="price" content="0">
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
-                            <a href="https://vue.insanitymeetshh.net" target="_blank">
+                            <a href="https://vue.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-vuejs" aria-hidden="true"></i>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Vue Skeleton">Vue Skeleton</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/file-sharing" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/file-sharing" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/file-sharing" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
@@ -257,8 +257,8 @@ $meta = array(
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://github.com/InsanityMeetsHH/twitch-chatbot" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/twitch-chatbot" />
+                            <link itemprop="url" href="https://github.com/CodelineRed/twitch-chatbot" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/twitch-chatbot" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
@@ -270,7 +270,7 @@ $meta = array(
                                 <meta itemprop="price" content="0" />
                                 <meta itemprop="priceCurrency" content="EUR" />
                             </div>
-                            <a href="https://github.com/InsanityMeetsHH/twitch-chatbot" target="_blank">
+                            <a href="https://github.com/CodelineRed/twitch-chatbot" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fab fa-twitch" style="color:#c9c9c9;"></i>
                                     <i class="fas fa-robot" data-fa-transform="shrink-12 down-5.5 right-4.5"></i>
@@ -280,7 +280,7 @@ $meta = array(
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/jquery-canvas-animation" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/jquery-canvas-animation" />
                             <meta itemprop="programmingLanguage" content="jQuery" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="A jQuery Plugin to create JavaScript step in mix with CSS3 animation / transition" />
@@ -290,7 +290,7 @@ $meta = array(
                                 <meta itemprop="price" content="0">
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
-                            <a href="http://ca.insanitymeetshh.net" target="_blank">
+                            <a href="http://ca.codelinered.net" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">jQuery</span>
@@ -300,7 +300,7 @@ $meta = array(
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://www.npmjs.com/package/bootstrap-breakpoint" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/bootstrap-breakpoint" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/bootstrap-breakpoint" />
                             <meta itemprop="programmingLanguage" content="jQuery" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="Write JavaScript conditions depending on the Bootstrap breakpoint" />
@@ -320,39 +320,39 @@ $meta = array(
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/typo3-skeleton" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/typo3-skeleton" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/typo3-skeleton" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="TYPO3 8.7 Skeleton - InsanityMeetsHH" />
+                            <meta itemprop="description" content="TYPO3 8.7 Skeleton - CodelineRed" />
                             <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0" />
                                 <meta itemprop="priceCurrency" content="EUR" />
                             </div>
-                            <a href="https://github.com/InsanityMeetsHH/typo3-skeleton" target="_blank">
+                            <a href="https://github.com/CodelineRed/typo3-skeleton" target="_blank">
                                 <i class="fab fa-5x fa-typo3" aria-hidden="true"></i>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 8.7 Skeleton (DEV)">TYPO3 8.7 Skeleton (DEV)</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/imhh-t3base" />
-                            <link itemprop="codeRepository" href="https://github.com/InsanityMeetsHH/typo3-base-ext" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/typo3-base-ext" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="programmingLanguage" content="TypoScript" />
-                            <meta itemprop="description" content="TYPO3 Base Extension - InsanityMeetsHH" />
+                            <meta itemprop="description" content="TYPO3 Base Extension - CodelineRed" />
                             <meta itemprop="copyrightYear" content="2018" />
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0" />
                                 <meta itemprop="priceCurrency" content="EUR" />
                             </div>
-                            <a href="https://github.com/InsanityMeetsHH/typo3-base-ext" target="_blank">
+                            <a href="https://github.com/CodelineRed/typo3-base-ext" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">TYPO3</span>
@@ -361,7 +361,7 @@ $meta = array(
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://gist.insanitymeetshh.net" target="_blank">
+                            <a href="http://gist.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-github" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="GitHub Gist">Code Snippets</div>
                             </a>
@@ -376,13 +376,13 @@ $meta = array(
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://stream.insanitymeetshh.net/" target="_blank">
+                            <a href="https://stream.codelinered.net/" target="_blank">
                                 <i class="fas fa-5x fa-gamepad" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Stream Information">Stream Information</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://devbook.insanitymeetshh.net/" target="_blank">
+                            <a href="https://devbook.codelinered.net/" target="_blank">
                                 <i class="fas fa-5x fa-book" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Developer Bookmark">Developer Bookmark</div>
                             </a>
