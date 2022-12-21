@@ -22,7 +22,7 @@ $meta = array(
     'socialMediaImage' => $baseUrl . 'img/general-ci.jpg',
     'siteName' => 'CodelineRed Universe',
     'twitterSite' => 'CodelineRed',
-    'twitterUrl' => 'https://twitter.com/CodelineRed',
+    'twitterUrl' => 'http://twitter.com/CodelineRed',
     'rssUrl' => '',
     'locale' => 'en_US',
     'themeColor' => '#ff2525',
@@ -152,55 +152,55 @@ $meta = array(
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://twitter.codelinered.net" target="_blank">
+                            <a href="http://twitter.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-twitter" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Twitter">Twitter</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://instagram.codelinered.net" target="_blank">
+                            <a href="http://instagram.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-instagram" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Instagram">Instagram</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://twitch.codelinered.net" target="_blank">
+                            <a href="http://twitch.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-twitch" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Twitch">Twitch</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://youtube.codelinered.net" target="_blank">
+                            <a href="http://youtube.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-youtube" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="YouTube">YouTube</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://github.codelinered.net" target="_blank">
+                            <a href="http://github.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-github custom" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="GitHub">GitHub</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://packagist.codelinered.net" target="_blank">
+                            <a href="http://packagist.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-dropbox" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Packagist">Packagist</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://npm.codelinered.net" target="_blank">
+                            <a href="http://npm.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-npm" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="NPM">NPM</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://steam.codelinered.net" target="_blank">
+                            <a href="http://steam.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-steam-symbol" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Steam">Steam</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://stackoverflow.codelinered.net/" target="_blank">
+                            <a href="http://stackoverflow.codelinered.net/" target="_blank">
                                 <i class="fab fa-5x fa-stack-overflow" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Stackoverflow">Stackoverflow</div>
                             </a>
@@ -400,7 +400,7 @@ $meta = array(
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://gist.codelinered.net" target="_blank">
+                            <a href="http://gist.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-github" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="GitHub Gist">Code Snippets</div>
                             </a>
