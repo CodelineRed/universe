@@ -11,8 +11,8 @@ $meta = array(
     'title' => 'CodelineRed Universe',
     'baseUrl' => $baseUrl,
     'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://www.' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
-    'keywords' => '',
-    'description' => '',
+    'keywords' => 'twitter, instagram, twitch, youtube, github, packagist, npm, steam, stackoverflow, gulp, vue, php, fontawesome, bootstrap, docker',
+    'description' => 'Hub Page',
     'robots' => 'index,follow',
     'author' => 'CodelineRed',
     'fbAppId' => '',
@@ -25,7 +25,7 @@ $meta = array(
     'twitterUrl' => 'https://twitter.com/CodelineRed',
     'rssUrl' => '',
     'locale' => 'en_US',
-    'themeColor' => '#212121',
+    'themeColor' => '#ff2525',
 );
 ?>
 
@@ -58,39 +58,77 @@ $meta = array(
         <link rel="canonical" href="<?php echo $meta['currentUrl']; ?>"/>
         <link rel="alternate" hreflang="x-default" href="<?php echo $meta['currentUrl']; ?>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="apple-touch-icon" href="img/favicons/favicon-180x180.png" sizes="180x180">
-        <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="img/favicons/favicon-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="img/favicons/manifest.json">
-        <link rel="mask-icon" href="img/favicons/favicon.svg" color="<?php echo $meta['themeColor']; ?>">
-        <meta name="msapplication-TileColor" content="<?php echo $meta['themeColor']; ?>">
-        <meta name="msapplication-TileImage" content="img/favicons/favicon-144x144.png">
-        <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-        <meta name="theme-color" content="<?php echo $meta['themeColor']; ?>">
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="img/favicons/favicon-48x48.png">
+        <link rel="manifest" href="img/favicons/manifest.json">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#fff">
+        <meta name="application-name" content="<?php echo $meta['title']; ?>">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="<?php echo $meta['title']; ?>">
+        <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-640x1136.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-750x1334.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-828x1792.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-1125x2436.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-1242x2208.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-1242x2688.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-1536x2048.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-1668x2224.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-1668x2388.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-2048x2732.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="img/favicons/apple-touch-startup-image-1620x2160.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-1136x640.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-1334x750.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-1792x828.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2436x1125.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2208x1242.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2688x1242.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2048x1536.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2224x1668.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2388x1668.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2732x2048.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2160x1620.png">
+        <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
+        <meta name="msapplication-TileColor" content="<?php echo $meta['themeColor']; ?>">
+        <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+        <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         <link rel="stylesheet" href="css/bootstrap.min.css?v=4.3.1">
-        <link rel="stylesheet" href="css/styles.css?v=2019-10-05">
-        <link rel="stylesheet" href="css/glitch.css?v=2022-11-13">
+        <link rel="stylesheet" href="css/styles.css?v=2022-12-21">
+        <link rel="stylesheet" href="css/glitch.css?v=2022-12-21">
         <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
             "name": "CodelineRed Universe",
             "url": "https://www.codelinered.net",
-            "copyrightYear": 2018,
+            "copyrightYear": 2022,
             "creator": {
                 "@type": "Organization",
                 "name": "CodelineRed",
                 "url": "https://www.codelinered.net",
                 "sameAs": [
-                    "https://www.youtube.com/channel/UCQhN04sk-qPWMo9cn6g_DRw",
-                    "https://twitter.com/CodelineRed",
+                    "https://www.youtube.com/@codelinered",
+                    "https://twitter.com/codelinered",
                     "https://www.twitch.tv/codelinered",
-                    "https://github.com/CodelineRed",
-                    "https://packagist.org/users/CodelineRed/",
+                    "https://github.com/codelinered",
+                    "https://packagist.org/users/codelinered/",
                     "https://www.npmjs.com/~codelinered",
-                    "https://steamcommunity.com/id/insanity_meets_hamburg",
+                    "https://steamcommunity.com/id/codelinered",
                     "https://stackoverflow.com/users/10384360/codelinered"
                 ]
             }
@@ -114,55 +152,55 @@ $meta = array(
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://twitter.codelinered.net" target="_blank">
+                            <a href="https://twitter.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-twitter" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Twitter">Twitter</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://instagram.codelinered.net" target="_blank">
+                            <a href="https://instagram.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-instagram" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Instagram">Instagram</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://twitch.codelinered.net" target="_blank">
+                            <a href="https://twitch.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-twitch" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Twitch">Twitch</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://youtube.codelinered.net" target="_blank">
+                            <a href="https://youtube.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-youtube" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="YouTube">YouTube</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://github.codelinered.net" target="_blank">
-                                <i class="fab fa-5x fa-github" aria-hidden="true"></i>
+                            <a href="https://github.codelinered.net" target="_blank">
+                                <i class="fab fa-5x fa-github custom" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="GitHub">GitHub</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://packagist.codelinered.net" target="_blank">
+                            <a href="https://packagist.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-dropbox" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Packagist">Packagist</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://npm.codelinered.net" target="_blank">
+                            <a href="https://npm.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-npm" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="NPM">NPM</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://steam.codelinered.net" target="_blank">
+                            <a href="https://steam.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-steam-symbol" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Steam">Steam</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="https://stackoverflow.com/users/10384360/codelinered" target="_blank">
+                            <a href="https://stackoverflow.codelinered.net/" target="_blank">
                                 <i class="fab fa-5x fa-stack-overflow" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Stackoverflow">Stackoverflow</div>
                             </a>
@@ -177,7 +215,7 @@ $meta = array(
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/slim-skeleton" />
+                            <link itemprop="url" href="https://packagist.org/packages/codelinered/slim-skeleton" />
                             <link itemprop="codeRepository" href="https://github.com/CodelineRed/Slim-Skeleton" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
@@ -190,10 +228,10 @@ $meta = array(
                                 <meta itemprop="price" content="0">
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
-                            <a href="https://slim3.insanitymeetshh.net" target="_blank">
+                            <a href="https://slim3.codelinered.net" target="_blank">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-code-branch"></i>
-                                    <i class="fab fa-php" data-fa-transform="shrink-8 down-5 right-2.5"></i>
+                                    <i class="fas fa-box"></i>
+                                    <i class="fab fa-php" data-fa-transform="shrink-5.5 down-2.5 left-2" style="color:#212121;"></i>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Slim Skeleton">Slim Skeleton</span>
                             </a>
@@ -219,6 +257,7 @@ $meta = array(
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://github.com/CodelineRed/vue-skeleton" />
                             <link itemprop="codeRepository" href="https://github.com/CodelineRed/vue-skeleton" />
+                            <meta itemprop="programmingLanguage" content="Vue" />
                             <meta itemprop="programmingLanguage" content="HTML" />
                             <meta itemprop="programmingLanguage" content="CSS" />
                             <meta itemprop="programmingLanguage" content="JavaScript" />
@@ -235,7 +274,7 @@ $meta = array(
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/file-sharing" />
+                            <link itemprop="url" href="https://packagist.org/packages/codelinered/file-sharing" />
                             <link itemprop="codeRepository" href="https://github.com/CodelineRed/file-sharing" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
@@ -248,7 +287,7 @@ $meta = array(
                                 <meta itemprop="price" content="0" />
                                 <meta itemprop="priceCurrency" content="EUR" />
                             </div>
-                            <a href="https://packagist.org/packages/insanitymeetshh/file-sharing" target="_blank">
+                            <a href="https://packagist.org/packages/codelinered/file-sharing" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
@@ -290,10 +329,10 @@ $meta = array(
                                 <meta itemprop="price" content="0">
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
-                            <a href="http://ca.codelinered.net" target="_blank">
+                            <a href="https://ca.codelinered.net" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
-                                    <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">jQuery</span>
+                                    <span class="fa-layers-text" data-fa-transform="shrink-13 down-0.5 rotate-45" style="font-weight:900">jQuery</span>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="jQuery Plugin - Canvas Animation">jQuery Plugin - Canvas Animation</span>
                             </a>
@@ -313,7 +352,7 @@ $meta = array(
                             <a href="https://www.npmjs.com/package/bootstrap-breakpoint" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
-                                    <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1.5" style="font-weight:900">JavaScript</span>
+                                    <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1 down-0.5 rotate-45" style="font-weight:900">JavaScript</span>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JavaScript Plugin - Bootstrap Breakpoint">JavaScript Plugin - Bootstrap Breakpoint</span>
                             </a>
@@ -355,13 +394,13 @@ $meta = array(
                             <a href="https://github.com/CodelineRed/typo3-base-ext" target="_blank">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-puzzle-piece"></i>
-                                    <span class="fa-layers-text" data-fa-transform="shrink-13 left-1.5" style="font-weight:900">TYPO3</span>
+                                    <span class="fa-layers-text" data-fa-transform="shrink-13 left-0.75 down-0.5 rotate-45" style="font-weight:900">TYPO3</span>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 Base Extension (DEV)">TYPO3 Base Extension (DEV)</span>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://gist.codelinered.net" target="_blank">
+                            <a href="https://gist.codelinered.net" target="_blank">
                                 <i class="fab fa-5x fa-github" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="GitHub Gist">Code Snippets</div>
                             </a>
@@ -391,6 +430,6 @@ $meta = array(
                 </div>
             </div>
         </div>
-        <script src="js/fa-all.min.js?v=5.7.2"></script>
+        <script src="js/fa-all.min.js?v=6.2.1"></script>
     </body>
 </html>

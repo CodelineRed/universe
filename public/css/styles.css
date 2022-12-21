@@ -20,8 +20,8 @@ a .fab.fa-instagram {
     color: #c13584;
 }
 
-a .svg-inline--fa.fa-github,
-a .fab.fa-github {
+a .svg-inline--fa.fa-github.custom,
+a .fab.fa-github.custom {
     color: #ffffff;
 }
 
