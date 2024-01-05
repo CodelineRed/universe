@@ -7,52 +7,67 @@ body {
 }
 
 a, h1, h2, h3, h4, label {
-    color: #FF2525;
+    color: #c9c9c9;
 }
 
 a .svg-inline--fa.fa-dropbox,
 a .fab.fa-dropbox {
-    color: #f28d1a;
+    fill: #f28d1a;
 }
 
 a .svg-inline--fa.fa-instagram,
 a .fab.fa-instagram {
-    color: #c13584;
+    fill: #c13584;
 }
 
-a .svg-inline--fa.fa-github.custom,
-a .fab.fa-github.custom {
-    color: #ffffff;
+a .svg-inline--fa.fa-github,
+a .fab.fa-github {
+    fill: url(#lgrad-github);
+}
+
+a .svg-inline--fa.fa-gulp,
+a .fab.fa-gulp {
+    fill: #E34C4F;
 }
 
 a .svg-inline--fa.fa-twitch,
 a .fab.fa-twitch {
-    color: #6441a4;
+    fill: #6441a4;
 }
 
-a .svg-inline--fa.fa-twitter,
-a .fab.fa-twitter {
-    color: #1da1f2;
+a .svg-inline--fa.fa-x-twitter,
+a .fab.fa-x-twitter {
+    fill: #1D9BF0;
 }
 
 a .svg-inline--fa.fa-youtube,
 a .fab.fa-youtube {
-    color: #ff0000;
+    fill: #ff0000;
 }
 
 a .svg-inline--fa.fa-npm,
 a .fab.fa-npm {
-    color: #CB3837;
+    fill: #CB3837;
 }
 
-a .svg-inline--fa.fa-steam-symbol,
-a .fab.fa-steam-symbol {
-    color: #ffffff;
+a .svg-inline--fa.fa-steam,
+a .fab.fa-steam {
+    fill: url(#lgrad-steam);
 }
 
 a .svg-inline--fa.fa-stack-overflow,
 a .fab.fa-stack-overflow {
-    color: #f48024;
+    fill: #f48024;
+}
+
+a .svg-inline--fa.fa-typo3,
+a .fab.fa-typo3 {
+    fill: #F88401;
+}
+
+a .svg-inline--fa.fa-vuejs,
+a .fab.fa-vuejs {
+    fill: #40B380;
 }
 
 a {
@@ -60,7 +75,7 @@ a {
 }
 
 a .fab, a .fas, a .svg-inline--fa {
-    color: #c9c9c9;
+    fill: #c9c9c9;
 }
 
 a:hover {

@@ -25,7 +25,7 @@ $meta = array(
     'twitterUrl' => 'http://twitter.com/CodelineRed',
     'rssUrl' => '',
     'locale' => 'en_US',
-    'themeColor' => '#ff2525',
+    'themeColor' => '#000',
 );
 ?>
 
@@ -64,7 +64,7 @@ $meta = array(
         <link rel="icon" type="image/png" sizes="48x48" href="img/favicons/favicon-48x48.png">
         <link rel="manifest" href="img/favicons/manifest.json">
         <meta name="mobile-web-app-capable" content="yes">
-        <meta name="theme-color" content="#fff">
+        <meta name="theme-color" content="#000">
         <meta name="application-name" content="<?php echo $meta['title']; ?>">
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
@@ -136,6 +136,19 @@ $meta = array(
         </script>
     </head>
     <body id="the-body" class="">
+        <svg height="0" width="0">
+            <defs>
+                <linearGradient id="lgrad-github" gradientTransform="rotate(75)">
+                    <stop offset="45%" stop-color="#4169e1"></stop>
+                    <stop offset="99%" stop-color="#c44764"></stop>
+                </linearGradient>
+                <linearGradient id="lgrad-steam" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#08172A"></stop>
+                    <stop offset="50%" stop-color="#0B2F67"></stop>
+                    <stop offset="100%" stop-color="#0B88B9"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-2 text-right">
@@ -153,8 +166,8 @@ $meta = array(
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitter.codelinered.net" target="_blank" aria-label="CodelineRed on Twitter">
-                                <i class="fab fa-5x fa-twitter" aria-hidden="true"></i>
-                                <div class="mt-2 glitch-text" data-text="Twitter">Twitter</div>
+                                <i class="fab fa-5x fa-x-twitter" aria-hidden="true"></i>
+                                <div class="mt-2 glitch-text" data-text="Twitter">X</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -165,19 +178,31 @@ $meta = array(
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitch.codelinered.net" target="_blank" aria-label="CodelineRed on Twitch">
-                                <i class="fab fa-5x fa-twitch" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-8 up-3"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-8 left-2"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-8 up-0.75 right-0.5 rotate--45"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-9 up-3.5 right-3.3"></i>
+                                    <i class="fab fa-twitch"></i>
+                                </span>
                                 <div class="mt-2 glitch-text" data-text="Twitch">Twitch</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://youtube.codelinered.net" target="_blank" aria-label="CodelineRed on YouTube">
-                                <i class="fab fa-5x fa-youtube" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-10 right-1"></i>
+                                    <i class="fab fa-youtube"></i>
+                                </span>
                                 <div class="mt-2 glitch-text" data-text="YouTube">YouTube</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://github.codelinered.net" target="_blank" aria-label="CodelineRed on GitHub">
-                                <i class="fab fa-5x fa-github custom" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-circle" data-fa-transform="shrink-0.75"></i>
+                                    <i class="fab fa-github"></i>
+                                </span>
                                 <div class="mt-2 glitch-text" data-text="GitHub">GitHub</div>
                             </a>
                         </div>
@@ -189,13 +214,23 @@ $meta = array(
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://npm.codelinered.net" target="_blank" aria-label="CodelineRed on NPM">
-                                <i class="fab fa-5x fa-npm" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 left-5"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 left-0"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 right-5"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 right-7"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-20 left-1 down-1"></i>
+                                    <i class="fab fa-npm"></i>
+                                </span>
                                 <div class="mt-2 glitch-text" data-text="NPM">NPM</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://steam.codelinered.net" target="_blank" aria-label="CodelineRed on Steam">
-                                <i class="fab fa-5x fa-steam-symbol" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-circle" data-fa-transform="shrink-0.75"></i>
+                                    <i class="fab fa-steam"></i>
+                                </span>
                                 <div class="mt-2 glitch-text" data-text="Steam">Steam</div>
                             </a>
                         </div>
@@ -231,7 +266,7 @@ $meta = array(
                             <a href="https://slim3.codelinered.net" target="_blank" aria-label="Slim Skeleton demo page">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-box"></i>
-                                    <i class="fab fa-php" data-fa-transform="shrink-5.5 down-2.5 left-2" style="color:#212121;"></i>
+                                    <i class="fab fa-php" data-fa-transform="shrink-5.5 down-2.5 left-2" style="fill:#212121;"></i>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Slim Skeleton">Slim Skeleton</span>
                             </a>
@@ -290,7 +325,7 @@ $meta = array(
                             <a href="https://packagist.org/packages/codelinered/file-sharing" target="_blank" aria-label="File Sharing on Packagist">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
-                                    <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="color:#212121;"></i>
+                                    <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="fill:#212121;"></i>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing</span>
                             </a>
@@ -311,7 +346,11 @@ $meta = array(
                             </div>
                             <a href="https://github.com/CodelineRed/twitch-chatbot" target="_blank" aria-label="Twitch Chatbot on GitHub">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fab fa-twitch" style="color:#c9c9c9;"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-8 up-3"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-8 left-2"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-8 up-0.75 right-0.5 rotate--45"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-9 up-3.5 right-3.3"></i>
+                                    <i class="fab fa-twitch"></i>
                                     <i class="fas fa-robot" data-fa-transform="shrink-12 down-5.5 right-4.5"></i>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Twitch Chatbot">Twitch Chatbot</span>
@@ -401,7 +440,10 @@ $meta = array(
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://gist.codelinered.net" target="_blank" aria-label="Code Snippets on Gist">
-                                <i class="fab fa-5x fa-github" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-circle" data-fa-transform="shrink-0.75"></i>
+                                    <i class="fab fa-github"></i>
+                                </span>
                                 <div class="mt-2 glitch-text" data-text="Code Snippets">Code Snippets</div>
                             </a>
                         </div>
@@ -430,6 +472,17 @@ $meta = array(
                 </div>
             </div>
         </div>
-        <script src="js/fa-all.min.js?v=6.2.1"></script>
+        <script src="js/fa-all.min.js?v=6.5.1"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                setTimeout(function() {
+                    let a = document.querySelectorAll('[fill="currentColor"]');
+
+                    for (let i in a) if (a.hasOwnProperty(i)) {
+                        a[i].setAttribute('fill', '');
+                    }
+                }, 50);
+            });
+        </script>
     </body>
 </html>
