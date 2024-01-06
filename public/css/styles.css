@@ -17,7 +17,7 @@ a .fab.fa-dropbox {
 
 a .svg-inline--fa.fa-instagram,
 a .fab.fa-instagram {
-    fill: #c13584;
+    fill: url(#lgrad-instagram);
 }
 
 a .svg-inline--fa.fa-github,

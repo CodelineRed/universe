@@ -108,7 +108,7 @@ $meta = array(
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         <link rel="stylesheet" href="css/bootstrap.min.css?v=4.3.1">
-        <link rel="stylesheet" href="css/styles.css?v=2022-12-21">
+        <link rel="stylesheet" href="css/styles.css?v=2024-01-06">
         <link rel="stylesheet" href="css/glitch.css?v=2022-12-21">
         <script type="application/ld+json">
         {
@@ -138,36 +138,34 @@ $meta = array(
     <body id="the-body" class="">
         <svg height="0" width="0">
             <defs>
-                <linearGradient id="lgrad-github" gradientTransform="rotate(75)">
-                    <stop offset="45%" stop-color="#4169e1"></stop>
-                    <stop offset="99%" stop-color="#c44764"></stop>
+                <linearGradient id="lgrad-github" gradientTransform="rotate(90)">
+                    <stop offset="20%" stop-color="#216AFF"></stop>
+                    <stop offset="100%" stop-color="#C025FF"></stop>
                 </linearGradient>
                 <linearGradient id="lgrad-steam" gradientTransform="rotate(90)">
                     <stop offset="0%" stop-color="#08172A"></stop>
                     <stop offset="50%" stop-color="#0B2F67"></stop>
                     <stop offset="100%" stop-color="#0B88B9"></stop>
                 </linearGradient>
+                <linearGradient id="lgrad-instagram" gradientTransform="rotate(120)">
+                    <stop offset="0%" stop-color="#5740D6"></stop>
+                    <stop offset="10%" stop-color="#BB27A2"></stop>
+                    <stop offset="40%" stop-color="#F4333C"></stop>
+                    <stop offset="100%" stop-color="#FAC253"></stop>
+                </linearGradient>
             </defs>
         </svg>
         <div class="container">
             <div class="row">
-                <div class="col-12 mt-2 text-right">
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="glitch-style" onchange="javascript:document.getElementById('the-body').classList.toggle('glitch');">
-                        <label class="custom-control-label" for="glitch-style">Glitch Style</label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center mb-5 glitch-text" data-text="CodelineRed Universe">CodelineRed Universe</h1>
+                    <h1 class="text-center mb-lg-3 glitch-text" data-text="CodelineRed Universe">CodelineRed Universe</h1>
                 </div>
                 <div class="col-sm-8 offset-sm-2">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitter.codelinered.net" target="_blank" aria-label="CodelineRed on Twitter">
                                 <i class="fab fa-5x fa-x-twitter" aria-hidden="true"></i>
-                                <div class="mt-2 glitch-text" data-text="Twitter">X</div>
+                                <div class="mt-2 glitch-text" data-text="X">X</div>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -228,7 +226,7 @@ $meta = array(
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://steam.codelinered.net" target="_blank" aria-label="CodelineRed on Steam">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-circle" data-fa-transform="shrink-0.75"></i>
+                                    <i class="fas fa-circle" data-fa-transform="shrink-0.95"></i>
                                     <i class="fab fa-steam"></i>
                                 </span>
                                 <div class="mt-2 glitch-text" data-text="Steam">Steam</div>
@@ -285,7 +283,12 @@ $meta = array(
                                 <meta itemprop="priceCurrency" content="EUR">
                             </div>
                             <a href="https://gulp.codelinered.net" target="_blank" aria-label="Gulp Skeleton demo page">
-                                <i class="fab fa-5x fa-gulp" aria-hidden="true"></i>
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 left-0.65 rotate--6"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 right-0.625 rotate-6"></i>
+                                    <i class="fab fa-gulp"></i>
+                                </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Gulp Skeleton">Gulp Skeleton</span>
                             </a>
                         </div>
@@ -471,6 +474,18 @@ $meta = array(
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <div class="row">
+                        <div class="col-auto my-4">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="glitch-style" onchange="javascript:document.getElementById('the-body').classList.toggle('glitch');">
+                                <label class="custom-control-label" for="glitch-style">Glitch Style</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="js/fa-all.min.js?v=6.5.1"></script>
         <script type="text/javascript">
@@ -481,7 +496,7 @@ $meta = array(
                     for (let i in a) if (a.hasOwnProperty(i)) {
                         a[i].setAttribute('fill', '');
                     }
-                }, 50);
+                }, 100);
             });
         </script>
     </body>
