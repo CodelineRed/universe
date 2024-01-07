@@ -156,11 +156,11 @@ $meta = array(
             </defs>
         </svg>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12">
                     <h1 class="text-center mb-lg-3 glitch-text" data-text="CodelineRed Universe">CodelineRed Universe</h1>
                 </div>
-                <div class="col-sm-8 offset-sm-2">
+                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://twitter.codelinered.net" target="_blank" aria-label="CodelineRed on Twitter">
@@ -189,8 +189,8 @@ $meta = array(
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://youtube.codelinered.net" target="_blank" aria-label="CodelineRed on YouTube">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-square-full" data-fa-transform="shrink-10 right-1"></i>
-                                    <i class="fab fa-youtube"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-10"></i>
+                                    <i class="fab fa-youtube" data-fa-transform="left-1"></i>
                                 </span>
                                 <div class="mt-2 glitch-text" data-text="YouTube">YouTube</div>
                             </a>
@@ -213,12 +213,12 @@ $meta = array(
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="http://npm.codelinered.net" target="_blank" aria-label="CodelineRed on NPM">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 left-5"></i>
-                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 left-0"></i>
-                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 right-5"></i>
-                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 right-7"></i>
-                                    <i class="fas fa-square-full" data-fa-transform="shrink-20 left-1 down-1"></i>
-                                    <i class="fab fa-npm"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 left-6"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 left-1"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 right-4"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-11 right-6"></i>
+                                    <i class="fas fa-square-full" data-fa-transform="shrink-20 left-2 down-1"></i>
+                                    <i class="fab fa-npm" data-fa-transform="left-1"></i>
                                 </span>
                                 <div class="mt-2 glitch-text" data-text="NPM">NPM</div>
                             </a>
@@ -241,11 +241,11 @@ $meta = array(
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12">
                     <h3 class="text-center mt-5 mb-2 glitch-text" data-text="Software">Software</h3>
                 </div>
-                <div class="col-sm-8 offset-sm-2">
+                <div class="col-lg-9">
                     <div class="row">
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://packagist.org/packages/codelinered/slim-skeleton" />
@@ -396,7 +396,7 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1 down-0.5 rotate-45" style="font-weight:900">JavaScript</span>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JavaScript Plugin - Bootstrap Breakpoint">JavaScript Plugin - Bootstrap Breakpoint</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JS Plugin - Bootstrap Breakpoint">JS Plugin - Bootstrap Breakpoint</span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -415,7 +415,7 @@ $meta = array(
                             </div>
                             <a href="https://github.com/CodelineRed/typo3-skeleton" target="_blank" aria-label="TYPO3 8.7 Skeleton on GitHub">
                                 <i class="fab fa-5x fa-typo3" aria-hidden="true"></i>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 8.7 Skeleton (DEV)">TYPO3 8.7 Skeleton (DEV)</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 8.7 Skeleton (DEV)">TYPO3 8.7 Skeleton <span class="badge badge-secondary">DEV</span></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -438,7 +438,7 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-0.75 down-0.5 rotate-45" style="font-weight:900">TYPO3</span>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 Base Extension (DEV)">TYPO3 Base Extension (DEV)</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 Base Extension (DEV)">TYPO3 Base Extension <span class="badge badge-secondary">DEV</span></span>
                             </a>
                         </div>
                         <div class="col-6 col-sm-4 text-center py-4">
@@ -453,11 +453,11 @@ $meta = array(
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12">
                     <h3 class="text-center mt-5 mb-2 glitch-text" data-text="Miscellaneous">Miscellaneous</h3>
                 </div>
-                <div class="col-sm-8 offset-sm-2">
+                <div class="col-lg-9">
                     <div class="row">
                         <div class="col-6 col-sm-4 text-center py-4">
                             <a href="https://stream.codelinered.net/" target="_blank" aria-label="Stream Information">
@@ -474,10 +474,10 @@ $meta = array(
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
                     <div class="row">
-                        <div class="col-auto my-4">
+                        <div class="col-6 col-sm-4 text-center my-4">
                             <div class="custom-control custom-switch">
                                 <input type="checkbox" class="custom-control-input" id="glitch-style" onchange="javascript:document.getElementById('the-body').classList.toggle('glitch');">
                                 <label class="custom-control-label" for="glitch-style">Glitch Style</label>
@@ -490,11 +490,16 @@ $meta = array(
         <script src="js/fa-all.min.js?v=6.5.1"></script>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function() {
-                setTimeout(function() {
-                    let a = document.querySelectorAll('[fill="currentColor"]');
+                let fillInterval = setInterval(function() {
+                    console.log('wait');
+                    if (!document.querySelectorAll('i[class*="fa-"]').length) {
+                        console.log('now');
+                        clearInterval(fillInterval);
+                        let a = document.querySelectorAll('[fill="currentColor"]');
 
-                    for (let i in a) if (a.hasOwnProperty(i)) {
-                        a[i].setAttribute('fill', '');
+                        for (let i in a) if (a.hasOwnProperty(i)) {
+                            a[i].setAttribute('fill', '');
+                        }
                     }
                 }, 100);
             });
