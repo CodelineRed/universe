@@ -27,6 +27,87 @@ $meta = array(
     'locale' => 'en_US',
     'themeColor' => '#000',
 );
+
+$repos = [
+    'bootstrap-breakpoint' => 'https://raw.githubusercontent.com/CodelineRed/bootstrap-breakpoint/master/package.json',
+    'file-sharing' => 'https://raw.githubusercontent.com/CodelineRed/file-sharing/main/composer.json',
+    'gulp-skeleton' => 'https://raw.githubusercontent.com/CodelineRed/gulp-skeleton/main/composer.json',
+    'jquery-canvas-animation' => 'https://raw.githubusercontent.com/CodelineRed/jquery-canvas-animation/master/package.json',
+    'slim-skeleton' => 'https://raw.githubusercontent.com/CodelineRed/Slim-Skeleton/master/composer.json',
+    'twitch-chatbot' => 'https://raw.githubusercontent.com/CodelineRed/twitch-chatbot/main/composer.json',
+    'vue-skeleton' => 'https://raw.githubusercontent.com/CodelineRed/vue-skeleton/main/composer.json',
+];
+
+function downloadSoftwareJson($software, $path, $repos) {
+    if (isset($repos[$software])) {
+        $json = file_get_contents($repos[$software]);
+
+        if (is_string($json) && strlen($json)) {
+            file_put_contents($path, $json);
+        }
+    }
+}
+
+function getSoftwareJson($path) {
+    $result = [];
+
+    if (is_readable($path)) {
+        $json = file_get_contents($path);
+
+        if (is_string($json) && strlen($json)) {
+            $json = json_decode($json, true);
+
+            if (is_array($json) && count($json)) {
+                $result = $json;
+            }
+        }
+    }
+
+    return $result;
+}
+
+function getSoftwareVersion($software, $repos) {
+    $result = '';
+    $path = '../data/' . $software . '.json';
+
+    if (isset($repos[$software])) {
+        if (is_readable($path)) {
+            if (time() - filemtime($path) > 86400) {
+                // file older than 24 hours
+                downloadSoftwareJson($software, $path, $repos);
+            }
+
+            $result = getSoftwareJson($path);
+        } else {
+            downloadSoftwareJson($software, $path, $repos);
+            $result = getSoftwareJson($path);
+        }
+    }
+
+    return isset($result['version']) ? $result['version'] : '';
+}
+
+function getSoftwareVersionBadge($software, $repos) {
+    $result = '';
+    $version = getSoftwareVersion($software, $repos);
+
+    if (strlen($version)) {
+        $result = ' <span class="badge badge-secondary">' . $version . '</span>';
+    }
+
+    return $result;
+}
+
+function getSoftwareVersionMeta($software, $repos) {
+    $result = '';
+    $version = getSoftwareVersion($software, $repos);
+
+    if (strlen($version)) {
+        $result = '<meta itemprop="version" content="' . $version . '" />';
+    }
+
+    return $result;
+}
 ?>
 
 <!DOCTYPE html>
@@ -129,7 +210,8 @@ $meta = array(
                     "https://packagist.org/users/codelinered/",
                     "https://www.npmjs.com/~codelinered",
                     "https://steamcommunity.com/id/codelinered",
-                    "https://stackoverflow.com/users/10384360/codelinered"
+                    "https://stackoverflow.com/users/10384360/codelinered",
+                    "https://codepen.io/CodelineRed"
                 ]
             }
         }
@@ -160,21 +242,21 @@ $meta = array(
                 <div class="col-12">
                     <h1 class="text-center mb-lg-3 glitch-text" data-text="CodelineRed Universe">CodelineRed Universe</h1>
                 </div>
-                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                <div class="col-sm-10 col-md-12 col-lg-8 col-xl-6">
                     <div class="row">
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://twitter.codelinered.net" target="_blank" aria-label="CodelineRed on Twitter">
                                 <i class="fab fa-5x fa-x-twitter" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="X">X</div>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://instagram.codelinered.net" target="_blank" aria-label="CodelineRed on Instagram">
                                 <i class="fab fa-5x fa-instagram" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Instagram">Instagram</div>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://twitch.codelinered.net" target="_blank" aria-label="CodelineRed on Twitch">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-square-full" data-fa-transform="shrink-8 up-3"></i>
@@ -186,7 +268,7 @@ $meta = array(
                                 <div class="mt-2 glitch-text" data-text="Twitch">Twitch</div>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://youtube.codelinered.net" target="_blank" aria-label="CodelineRed on YouTube">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-square-full" data-fa-transform="shrink-10"></i>
@@ -195,7 +277,7 @@ $meta = array(
                                 <div class="mt-2 glitch-text" data-text="YouTube">YouTube</div>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://github.codelinered.net" target="_blank" aria-label="CodelineRed on GitHub">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-circle" data-fa-transform="shrink-0.75"></i>
@@ -204,13 +286,13 @@ $meta = array(
                                 <div class="mt-2 glitch-text" data-text="GitHub">GitHub</div>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://packagist.codelinered.net" target="_blank" aria-label="CodelineRed on Packagist">
                                 <i class="fab fa-5x fa-dropbox" aria-hidden="true"></i>
                                 <div class="mt-2 glitch-text" data-text="Packagist">Packagist</div>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://npm.codelinered.net" target="_blank" aria-label="CodelineRed on NPM">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-square-full" data-fa-transform="shrink-11 left-6"></i>
@@ -223,19 +305,25 @@ $meta = array(
                                 <div class="mt-2 glitch-text" data-text="NPM">NPM</div>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
+                            <a href="https://codepen.io/CodelineRed" target="_blank" aria-label="CodelineRed on CodePen">
+                                <i class="fab fa-5x fa-codepen" aria-hidden="true"></i>
+                                <div class="mt-2 glitch-text" data-text="CodePen">CodePen</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
+                            <a href="http://stackoverflow.codelinered.net/" target="_blank" aria-label="CodelineRed on Stackoverflow">
+                                <i class="fab fa-5x fa-stack-overflow" aria-hidden="true"></i>
+                                <div class="mt-2 glitch-text" data-text="Stackoverflow">Stackoverflow</div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 text-center py-4">
                             <a href="http://steam.codelinered.net" target="_blank" aria-label="CodelineRed on Steam">
                                 <span class="fa-layers fa-5x">
                                     <i class="fas fa-circle" data-fa-transform="shrink-0.95"></i>
                                     <i class="fab fa-steam"></i>
                                 </span>
                                 <div class="mt-2 glitch-text" data-text="Steam">Steam</div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-sm-4 text-center py-4">
-                            <a href="http://stackoverflow.codelinered.net/" target="_blank" aria-label="CodelineRed on Stackoverflow">
-                                <i class="fab fa-5x fa-stack-overflow" aria-hidden="true"></i>
-                                <div class="mt-2 glitch-text" data-text="Stackoverflow">Stackoverflow</div>
                             </a>
                         </div>
                     </div>
@@ -256,6 +344,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="Slim Skeleton with Twig, Doctrine, Google reCAPTCHA, Two Factor Auth and Localisation">
                             <meta itemprop="copyrightYear" content="2018" />
+                            <?= getSoftwareVersionMeta('slim-skeleton', $repos); ?>
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0">
@@ -266,7 +355,7 @@ $meta = array(
                                     <i class="fas fa-box"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-5.5 down-2.5 left-2" style="fill:#212121;"></i>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Slim Skeleton">Slim Skeleton</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Slim Skeleton">Slim Skeleton<?= getSoftwareVersionBadge('slim-skeleton', $repos); ?></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -277,6 +366,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="Skeleton to create templates with gulp" />
                             <meta itemprop="copyrightYear" content="2018" />
+                            <?= getSoftwareVersionMeta('gulp-skeleton', $repos); ?>
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0">
@@ -289,7 +379,7 @@ $meta = array(
                                     <i class="fas fa-square-full" data-fa-transform="shrink-11 right-0.625 rotate-6"></i>
                                     <i class="fab fa-gulp"></i>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Gulp Skeleton">Gulp Skeleton</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Gulp Skeleton">Gulp Skeleton<?= getSoftwareVersionBadge('gulp-skeleton', $repos); ?></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -301,6 +391,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="Vue.js Skeleton with Gulp" />
                             <meta itemprop="copyrightYear" content="2020" />
+                            <?= getSoftwareVersionMeta('vue-skeleton', $repos); ?>
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0">
@@ -308,7 +399,7 @@ $meta = array(
                             </div>
                             <a href="https://vue.codelinered.net" target="_blank" aria-label="Vue Skeleton demo page">
                                 <i class="fab fa-5x fa-vuejs" aria-hidden="true"></i>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Vue Skeleton">Vue Skeleton</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Vue Skeleton">Vue Skeleton<?= getSoftwareVersionBadge('vue-skeleton', $repos); ?></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -320,6 +411,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="Platform to upload, download and share files">
                             <meta itemprop="copyrightYear" content="2018" />
+                            <?= getSoftwareVersionMeta('file-sharing', $repos); ?>
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0" />
@@ -330,7 +422,7 @@ $meta = array(
                                     <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="fill:#212121;"></i>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing<?= getSoftwareVersionBadge('file-sharing', $repos); ?></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -342,6 +434,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="NodeJs" />
                             <meta itemprop="description" content="Twitch Chatbot made with Vue Skeleton">
                             <meta itemprop="copyrightYear" content="2020" />
+                            <?= getSoftwareVersionMeta('twitch-chatbot', $repos); ?>
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0" />
@@ -356,7 +449,7 @@ $meta = array(
                                     <i class="fab fa-twitch"></i>
                                     <i class="fas fa-robot" data-fa-transform="shrink-12 down-5.5 right-4.5"></i>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Twitch Chatbot">Twitch Chatbot</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Twitch Chatbot">Twitch Chatbot<?= getSoftwareVersionBadge('twitch-chatbot', $repos); ?></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -366,6 +459,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="A jQuery Plugin to create JavaScript step in mix with CSS3 animation / transition" />
                             <meta itemprop="copyrightYear" content="2018" />
+                            <?= getSoftwareVersionMeta('jquery-canvas-animation', $repos); ?>
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0">
@@ -376,7 +470,7 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 down-0.5 rotate-45" style="font-weight:900">jQuery</span>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="jQuery Plugin - Canvas Animation">jQuery Plugin - Canvas Animation</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="jQuery Plugin - Canvas Animation">Canvas Animation<?= getSoftwareVersionBadge('jquery-canvas-animation', $repos); ?></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
@@ -386,6 +480,7 @@ $meta = array(
                             <meta itemprop="programmingLanguage" content="JavaScript" />
                             <meta itemprop="description" content="Write JavaScript conditions depending on the Bootstrap breakpoint" />
                             <meta itemprop="copyrightYear" content="2018" />
+                            <?= getSoftwareVersionMeta('bootstrap-breakpoint', $repos); ?>
                             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <link itemprop="availability" href="http://schema.org/InStock" />
                                 <meta itemprop="price" content="0" />
@@ -396,11 +491,11 @@ $meta = array(
                                     <i class="fas fa-puzzle-piece"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1 down-0.5 rotate-45" style="font-weight:900">JavaScript</span>
                                 </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JS Plugin - Bootstrap Breakpoint">JS Plugin - Bootstrap Breakpoint</span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JS Plugin - Bootstrap Breakpoint">Bootstrap Breakpoint<?= getSoftwareVersionBadge('bootstrap-breakpoint', $repos); ?></span>
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/typo3-skeleton" />
+                            <link itemprop="url" href="https://github.com/CodelineRed/typo3-skeleton" />
                             <link itemprop="codeRepository" href="https://github.com/CodelineRed/typo3-skeleton" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
@@ -419,7 +514,7 @@ $meta = array(
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://packagist.org/packages/insanitymeetshh/imhh-t3base" />
+                            <link itemprop="url" href="https://github.com/CodelineRed/typo3-base-ext" />
                             <link itemprop="codeRepository" href="https://github.com/CodelineRed/typo3-base-ext" />
                             <meta itemprop="programmingLanguage" content="PHP" />
                             <meta itemprop="programmingLanguage" content="HTML" />
@@ -491,9 +586,9 @@ $meta = array(
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function() {
                 let fillInterval = setInterval(function() {
-                    console.log('wait');
+                    //console.log('wait');
                     if (!document.querySelectorAll('i[class*="fa-"]').length) {
-                        console.log('now');
+                        //console.log('now');
                         clearInterval(fillInterval);
                         let a = document.querySelectorAll('[fill="currentColor"]');
 
