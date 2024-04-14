@@ -25,6 +25,26 @@ a .fab.fa-github {
     fill: url(#lgrad-github);
 }
 
+a .svg-inline--fa.php-gradient,
+a .fas.php-gradient {
+    fill: url(#lgrad-php);
+}
+
+a .svg-inline--fa.javascript-gradient,
+a .fas.javascript-gradient {
+    fill: url(#lgrad-javascript);
+}
+
+a .svg-inline--fa.slim-gradient,
+a .fas.slim-gradient {
+    fill: url(#lgrad-slim);
+}
+
+a .svg-inline--fa.jquery-gradient,
+a .fas.jquery-gradient {
+    fill: url(#lgrad-jquery);
+}
+
 a .svg-inline--fa.fa-gulp,
 a .fab.fa-gulp {
     fill: #E34C4F;
@@ -60,9 +80,11 @@ a .fab.fa-stack-overflow {
     fill: #f48024;
 }
 
+a .svg-inline--fa.typo3-gradient,
+a .fab.typo3-gradient,
 a .svg-inline--fa.fa-typo3,
 a .fab.fa-typo3 {
-    fill: #F88401;
+    fill: url(#lgrad-typo3);
 }
 
 a .svg-inline--fa.fa-vuejs,

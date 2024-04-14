@@ -33,6 +33,7 @@ $repos = [
     'file-sharing' => 'https://raw.githubusercontent.com/CodelineRed/file-sharing/main/composer.json',
     'gulp-skeleton' => 'https://raw.githubusercontent.com/CodelineRed/gulp-skeleton/main/composer.json',
     'jquery-canvas-animation' => 'https://raw.githubusercontent.com/CodelineRed/jquery-canvas-animation/master/package.json',
+    'pdf-image' => 'https://raw.githubusercontent.com/CodelineRed/pdf-image/main/composer.json',
     'slim-skeleton' => 'https://raw.githubusercontent.com/CodelineRed/Slim-Skeleton/master/composer.json',
     'twitch-chatbot' => 'https://raw.githubusercontent.com/CodelineRed/twitch-chatbot/main/composer.json',
     'vue-skeleton' => 'https://raw.githubusercontent.com/CodelineRed/vue-skeleton/main/composer.json',
@@ -189,7 +190,7 @@ function getSoftwareVersionMeta($software, $repos) {
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         <link rel="stylesheet" href="css/bootstrap.min.css?v=4.3.1">
-        <link rel="stylesheet" href="css/styles.css?v=2024-01-06">
+        <link rel="stylesheet" href="css/styles.css?v=2024-04-14">
         <link rel="stylesheet" href="css/glitch.css?v=2022-12-21">
         <script type="application/ld+json">
         {
@@ -234,6 +235,31 @@ function getSoftwareVersionMeta($software, $repos) {
                     <stop offset="10%" stop-color="#BB27A2"></stop>
                     <stop offset="40%" stop-color="#F4333C"></stop>
                     <stop offset="100%" stop-color="#FAC253"></stop>
+                </linearGradient>
+                <linearGradient id="lgrad-php" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#3c4771"></stop>
+                    <stop offset="75%" stop-color="#6477ba"></stop>
+                    <stop offset="100%" stop-color="#6477ba"></stop>
+                </linearGradient>
+                <linearGradient id="lgrad-typo3" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#F88401"></stop>
+                    <stop offset="75%" stop-color="#f7af62"></stop>
+                    <stop offset="100%" stop-color="#f7af62"></stop>
+                </linearGradient>
+                <linearGradient id="lgrad-javascript" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#f0d81f"></stop>
+                    <stop offset="75%" stop-color="#efe599"></stop>
+                    <stop offset="100%" stop-color="#efe599"></stop>
+                </linearGradient>
+                <linearGradient id="lgrad-slim" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#649e3d"></stop>
+                    <stop offset="75%" stop-color="#85ce50"></stop>
+                    <stop offset="100%" stop-color="#85ce50"></stop>
+                </linearGradient>
+                <linearGradient id="lgrad-jquery" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#21a8dc"></stop>
+                    <stop offset="75%" stop-color="#7ac1db"></stop>
+                    <stop offset="100%" stop-color="#7ac1db"></stop>
                 </linearGradient>
             </defs>
         </svg>
@@ -352,7 +378,7 @@ function getSoftwareVersionMeta($software, $repos) {
                             </div>
                             <a href="https://slim3.codelinered.net" target="_blank" aria-label="Slim Skeleton demo page">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-box"></i>
+                                    <i class="fas fa-box slim-gradient"></i>
                                     <i class="fab fa-php" data-fa-transform="shrink-5.5 down-2.5 left-2" style="fill:#212121;"></i>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="Slim Skeleton">Slim Skeleton<?= getSoftwareVersionBadge('slim-skeleton', $repos); ?></span>
@@ -403,29 +429,6 @@ function getSoftwareVersionMeta($software, $repos) {
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
-                            <link itemprop="url" href="https://packagist.org/packages/codelinered/file-sharing" />
-                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/file-sharing" />
-                            <meta itemprop="programmingLanguage" content="PHP" />
-                            <meta itemprop="programmingLanguage" content="HTML" />
-                            <meta itemprop="programmingLanguage" content="CSS" />
-                            <meta itemprop="programmingLanguage" content="JavaScript" />
-                            <meta itemprop="description" content="Platform to upload, download and share files">
-                            <meta itemprop="copyrightYear" content="2018" />
-                            <?= getSoftwareVersionMeta('file-sharing', $repos); ?>
-                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                <link itemprop="availability" href="http://schema.org/InStock" />
-                                <meta itemprop="price" content="0" />
-                                <meta itemprop="priceCurrency" content="EUR" />
-                            </div>
-                            <a href="https://packagist.org/packages/codelinered/file-sharing" target="_blank" aria-label="File Sharing on Packagist">
-                                <span class="fa-layers fa-5x">
-                                    <i class="fas fa-share-alt" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
-                                    <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="fill:#212121;"></i>
-                                </span>
-                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing<?= getSoftwareVersionBadge('file-sharing', $repos); ?></span>
-                            </a>
-                        </div>
-                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://github.com/CodelineRed/twitch-chatbot" />
                             <link itemprop="codeRepository" href="https://github.com/CodelineRed/twitch-chatbot" />
                             <meta itemprop="programmingLanguage" content="HTML" />
@@ -453,6 +456,52 @@ function getSoftwareVersionMeta($software, $repos) {
                             </a>
                         </div>
                         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/codelinered/file-sharing" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/file-sharing" />
+                            <meta itemprop="programmingLanguage" content="PHP" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="Platform to upload, download and share files">
+                            <meta itemprop="copyrightYear" content="2018" />
+                            <?= getSoftwareVersionMeta('file-sharing', $repos); ?>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0" />
+                                <meta itemprop="priceCurrency" content="EUR" />
+                            </div>
+                            <a href="https://packagist.org/packages/codelinered/file-sharing" target="_blank" aria-label="File Sharing on Packagist">
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-share-alt php-gradient" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
+                                    <i class="fab fa-php" data-fa-transform="shrink-11 up-5.5 left-4.5" style="fill:#212121;"></i>
+                                </span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="File Sharing">File Sharing<?= getSoftwareVersionBadge('file-sharing', $repos); ?></span>
+                            </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
+                            <link itemprop="url" href="https://packagist.org/packages/codelinered/pdf-image" />
+                            <link itemprop="codeRepository" href="https://github.com/CodelineRed/pdf-image" />
+                            <meta itemprop="programmingLanguage" content="PHP" />
+                            <meta itemprop="programmingLanguage" content="HTML" />
+                            <meta itemprop="programmingLanguage" content="CSS" />
+                            <meta itemprop="programmingLanguage" content="JavaScript" />
+                            <meta itemprop="description" content="Converts uploaded images to PDF, merges 2 PDF files to 1 or converts PDF to images." />
+                            <meta itemprop="copyrightYear" content="2023" />
+                            <?= getSoftwareVersionMeta('pdf-image', $repos); ?>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                <meta itemprop="price" content="0">
+                                <meta itemprop="priceCurrency" content="EUR">
+                            </div>
+                            <a href="https://packagist.org/packages/codelinered/pdf-image" target="_blank" aria-label="PDF Image on Packagist">
+                                <span class="fa-layers fa-5x">
+                                    <i class="fas fa-image php-gradient" data-fa-mask="fas fa-file" data-fa-transform="shrink-7 down-2.5"></i>
+                                    <span class="fa-layers-text" data-fa-transform="shrink-13 up-5.5 left-2.5" style="font-weight:900">PDF</span>
+                                </span>
+                                <span itemprop="name" class="mt-2 d-block glitch-text" data-text="PDF Image">PDF Image<?= getSoftwareVersionBadge('pdf-image', $repos); ?></span>
+                            </a>
+                        </div>
+                        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="col-6 col-sm-4 text-center py-4">
                             <link itemprop="url" href="https://www.npmjs.com/package/jquery-canvas-animation" />
                             <link itemprop="codeRepository" href="https://github.com/CodelineRed/jquery-canvas-animation" />
                             <meta itemprop="programmingLanguage" content="jQuery" />
@@ -467,7 +516,7 @@ function getSoftwareVersionMeta($software, $repos) {
                             </div>
                             <a href="https://ca.codelinered.net" target="_blank" aria-label="Canvas Animation demo page">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-puzzle-piece"></i>
+                                    <i class="fas fa-puzzle-piece jquery-gradient"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 down-0.5 rotate-45" style="font-weight:900">jQuery</span>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="jQuery Plugin - Canvas Animation">Canvas Animation<?= getSoftwareVersionBadge('jquery-canvas-animation', $repos); ?></span>
@@ -488,7 +537,7 @@ function getSoftwareVersionMeta($software, $repos) {
                             </div>
                             <a href="https://www.npmjs.com/package/bootstrap-breakpoint" target="_blank" aria-label="Bootstrap Breakpoint on NPM">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-puzzle-piece"></i>
+                                    <i class="fas fa-puzzle-piece javascript-gradient"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13.75 left-1 down-0.5 rotate-45" style="font-weight:900">JavaScript</span>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="JS Plugin - Bootstrap Breakpoint">Bootstrap Breakpoint<?= getSoftwareVersionBadge('bootstrap-breakpoint', $repos); ?></span>
@@ -530,7 +579,7 @@ function getSoftwareVersionMeta($software, $repos) {
                             </div>
                             <a href="https://github.com/CodelineRed/typo3-base-ext" target="_blank" aria-label="TYPO3 Base Extension on GitHub">
                                 <span class="fa-layers fa-5x">
-                                    <i class="fas fa-puzzle-piece"></i>
+                                    <i class="fas fa-puzzle-piece typo3-gradient"></i>
                                     <span class="fa-layers-text" data-fa-transform="shrink-13 left-0.75 down-0.5 rotate-45" style="font-weight:900">TYPO3</span>
                                 </span>
                                 <span itemprop="name" class="mt-2 d-block glitch-text" data-text="TYPO3 Base Extension (DEV)">TYPO3 Base Extension <span class="badge badge-secondary">DEV</span></span>
